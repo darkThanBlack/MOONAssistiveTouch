@@ -105,8 +105,8 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource = "Resource/**/*"
-  s.resources = "Resources/*.png"
+  s.resource = "Resource/**/**/*"
+  s.resources = "Resources/**/**/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
