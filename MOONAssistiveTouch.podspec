@@ -80,7 +80,7 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/darkThanBlack/MOONAssistiveTouch.git", :tag => "s.version" }
+  s.source       = { :git => "https://github.com/darkThanBlack/MOONAssistiveTouch.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,8 +105,8 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource = "Resource/**/*.png"
-  # s.resources = "Resources/*.png"
+  s.resource = "Resource/**/*"
+  s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
