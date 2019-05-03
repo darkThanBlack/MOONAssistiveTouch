@@ -109,7 +109,7 @@ static MOONATCore *core_ = nil;
         
     }];
 
-    MOONATMenuItemAction *action_sub_5 = [MOONATMenuItemAction actionWithTitle:nil itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
+    MOONATMenuItemAction *action_sub_5 = [MOONATMenuItemAction actionWithTitle:@"none" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
         
     }];
 

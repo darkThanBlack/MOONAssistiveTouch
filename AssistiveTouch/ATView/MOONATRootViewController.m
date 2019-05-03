@@ -83,13 +83,12 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 {
     if (!_imageNameArray) {
         NSDictionary *skin = self.skin?self.skin:nil;
-        NSDictionary *menuSkin = skin;
         NSInteger imageType = skin?[[skin objectForKey:@"imageType"] integerValue]:0;
         NSString *imageBasicName = [NSString stringWithFormat:@"MOON_AT_item_%ld_", (long)imageType];
         
         _imageNameArray = [[NSMutableArray alloc]init];
         for (NSInteger i = 0; i < 20; i++) {
-            NSString *imageName = [NSString stringWithFormat:@"%@%ld", imageBasicName, i];
+            NSString *imageName = [NSString stringWithFormat:@"%@%ld", imageBasicName, (long)i];
             [_imageNameArray addObject:imageName];
         }
     }
@@ -263,7 +262,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     
     [self.imageNameArray removeAllObjects];
     for (NSInteger i = 0; i < 20; i++) {
-        NSString *imageName = [NSString stringWithFormat:@"%@%ld", imageBasicName, i];
+        NSString *imageName = [NSString stringWithFormat:@"%@%ld", imageBasicName, (long)i];
         [self.imageNameArray addObject:imageName];
     }
     

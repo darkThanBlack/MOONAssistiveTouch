@@ -190,11 +190,11 @@
 			isa = PBXGroup;
 			children = (
 				88B959D9227C6CAC00E2BEC8 /* MOONATContentView.m */,
+				88B959DE227C6CAC00E2BEC8 /* MOONATRootViewController.h */,
 				88B959DA227C6CAC00E2BEC8 /* MOONATRootViewController.m */,
 				88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */,
 				88B959DC227C6CAC00E2BEC8 /* MOONATContentView.h */,
 				88B959DD227C6CAC00E2BEC8 /* MOONATWindow.h */,
-				88B959DE227C6CAC00E2BEC8 /* MOONATRootViewController.h */,
 			);
 			path = ATView;
 			sourceTree = "<group>";
