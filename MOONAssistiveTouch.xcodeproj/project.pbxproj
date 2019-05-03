@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88B9599E227C6C6100E2BEC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B9599D227C6C6100E2BEC8 /* AppDelegate.m */; };
+		88B959A6227C6C6300E2BEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B959A5227C6C6300E2BEC8 /* Assets.xcassets */; };
+		88B959A9227C6C6300E2BEC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B959A7227C6C6300E2BEC8 /* LaunchScreen.storyboard */; };
+		88B959AC227C6C6300E2BEC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959AB227C6C6300E2BEC8 /* main.m */; };
+		88B959B6227C6C6300E2BEC8 /* MOONATProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959B5227C6C6300E2BEC8 /* MOONATProjectTests.m */; };
+		88B959C1227C6C6300E2BEC8 /* MOONATProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959C0227C6C6300E2BEC8 /* MOONATProjectUITests.m */; };
+		88B959DF227C6CAC00E2BEC8 /* MOONATMenuItemAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */; };
+		88B959E0227C6CAC00E2BEC8 /* MOONATCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */; };
+		88B959E1227C6CAC00E2BEC8 /* MOONATSystemMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D7227C6CAC00E2BEC8 /* MOONATSystemMenuView.m */; };
+		88B959E2227C6CAC00E2BEC8 /* MOONATContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D9227C6CAC00E2BEC8 /* MOONATContentView.m */; };
+		88B959E3227C6CAC00E2BEC8 /* MOONATRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DA227C6CAC00E2BEC8 /* MOONATRootViewController.m */; };
+		88B959E4227C6CAC00E2BEC8 /* MOONATWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */; };
+		88B959E7227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959E5227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88B959B2227C6C6300E2BEC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B95991227C6C6100E2BEC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B95998227C6C6100E2BEC8;
+			remoteInfo = MOONATProject;
+		};
+		88B959BD227C6C6300E2BEC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B95991227C6C6100E2BEC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B95998227C6C6100E2BEC8;
+			remoteInfo = MOONATProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88B95999227C6C6100E2BEC8 /* MOONATProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOONATProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B9599C227C6C6100E2BEC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88B9599D227C6C6100E2BEC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88B959A5227C6C6300E2BEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88B959A8227C6C6300E2BEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88B959AA227C6C6300E2BEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B959AB227C6C6300E2BEC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88B959B1227C6C6300E2BEC8 /* MOONATProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOONATProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B959B5227C6C6300E2BEC8 /* MOONATProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOONATProjectTests.m; sourceTree = "<group>"; };
+		88B959B7227C6C6300E2BEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B959BC227C6C6300E2BEC8 /* MOONATProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOONATProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B959C0227C6C6300E2BEC8 /* MOONATProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOONATProjectUITests.m; sourceTree = "<group>"; };
+		88B959C2227C6C6300E2BEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B959D0227C6CAC00E2BEC8 /* MOONATCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATCore.h; sourceTree = "<group>"; };
+		88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATMenuItemAction.m; sourceTree = "<group>"; };
+		88B959D2227C6CAC00E2BEC8 /* MOONATMenuItemAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATMenuItemAction.h; sourceTree = "<group>"; };
+		88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATCore.m; sourceTree = "<group>"; };
+		88B959D6227C6CAC00E2BEC8 /* MOONATSystemMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATSystemMenuView.h; sourceTree = "<group>"; };
+		88B959D7227C6CAC00E2BEC8 /* MOONATSystemMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATSystemMenuView.m; sourceTree = "<group>"; };
+		88B959D9227C6CAC00E2BEC8 /* MOONATContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATContentView.m; sourceTree = "<group>"; };
+		88B959DA227C6CAC00E2BEC8 /* MOONATRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATRootViewController.m; sourceTree = "<group>"; };
+		88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATWindow.m; sourceTree = "<group>"; };
+		88B959DC227C6CAC00E2BEC8 /* MOONATContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATContentView.h; sourceTree = "<group>"; };
+		88B959DD227C6CAC00E2BEC8 /* MOONATWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATWindow.h; sourceTree = "<group>"; };
+		88B959DE227C6CAC00E2BEC8 /* MOONATRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATRootViewController.h; sourceTree = "<group>"; };
+		88B959E5227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistiveTouchDemoViewController.m; sourceTree = "<group>"; };
+		88B959E6227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistiveTouchDemoViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88B95996227C6C6100E2BEC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B959AE227C6C6300E2BEC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B959B9227C6C6300E2BEC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88B95990227C6C6100E2BEC8 = {
+			isa = PBXGroup;
+			children = (
+				88B959E8227C712B00E2BEC8 /* Resource */,
+				88B959CE227C6CAC00E2BEC8 /* AssistiveTouch */,
+				88B9599B227C6C6100E2BEC8 /* DEMO */,
+				88B959B4227C6C6300E2BEC8 /* MOONATProjectTests */,
+				88B959BF227C6C6300E2BEC8 /* MOONATProjectUITests */,
+				88B9599A227C6C6100E2BEC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88B9599A227C6C6100E2BEC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88B95999227C6C6100E2BEC8 /* MOONATProject.app */,
+				88B959B1227C6C6300E2BEC8 /* MOONATProjectTests.xctest */,
+				88B959BC227C6C6300E2BEC8 /* MOONATProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88B9599B227C6C6100E2BEC8 /* DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				88B9599C227C6C6100E2BEC8 /* AppDelegate.h */,
+				88B9599D227C6C6100E2BEC8 /* AppDelegate.m */,
+				88B959E6227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.h */,
+				88B959E5227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m */,
+				88B959A7227C6C6300E2BEC8 /* LaunchScreen.storyboard */,
+				88B959AA227C6C6300E2BEC8 /* Info.plist */,
+				88B959AB227C6C6300E2BEC8 /* main.m */,
+			);
+			path = DEMO;
+			sourceTree = "<group>";
+		};
+		88B959B4227C6C6300E2BEC8 /* MOONATProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				88B959B5227C6C6300E2BEC8 /* MOONATProjectTests.m */,
+				88B959B7227C6C6300E2BEC8 /* Info.plist */,
+			);
+			path = MOONATProjectTests;
+			sourceTree = "<group>";
+		};
+		88B959BF227C6C6300E2BEC8 /* MOONATProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88B959C0227C6C6300E2BEC8 /* MOONATProjectUITests.m */,
+				88B959C2227C6C6300E2BEC8 /* Info.plist */,
+			);
+			path = MOONATProjectUITests;
+			sourceTree = "<group>";
+		};
+		88B959CE227C6CAC00E2BEC8 /* AssistiveTouch */ = {
+			isa = PBXGroup;
+			children = (
+				88B959CF227C6CAC00E2BEC8 /* Core */,
+				88B959D4227C6CAC00E2BEC8 /* Menu */,
+				88B959D8227C6CAC00E2BEC8 /* ATView */,
+			);
+			path = AssistiveTouch;
+			sourceTree = "<group>";
+		};
+		88B959CF227C6CAC00E2BEC8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				88B959D0227C6CAC00E2BEC8 /* MOONATCore.h */,
+				88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */,
+				88B959D2227C6CAC00E2BEC8 /* MOONATMenuItemAction.h */,
+				88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		88B959D4227C6CAC00E2BEC8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				88B959D5227C6CAC00E2BEC8 /* SystemMenu */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		88B959D5227C6CAC00E2BEC8 /* SystemMenu */ = {
+			isa = PBXGroup;
+			children = (
+				88B959D6227C6CAC00E2BEC8 /* MOONATSystemMenuView.h */,
+				88B959D7227C6CAC00E2BEC8 /* MOONATSystemMenuView.m */,
+			);
+			path = SystemMenu;
+			sourceTree = "<group>";
+		};
+		88B959D8227C6CAC00E2BEC8 /* ATView */ = {
+			isa = PBXGroup;
+			children = (
+				88B959D9227C6CAC00E2BEC8 /* MOONATContentView.m */,
+				88B959DA227C6CAC00E2BEC8 /* MOONATRootViewController.m */,
+				88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */,
+				88B959DC227C6CAC00E2BEC8 /* MOONATContentView.h */,
+				88B959DD227C6CAC00E2BEC8 /* MOONATWindow.h */,
+				88B959DE227C6CAC00E2BEC8 /* MOONATRootViewController.h */,
+			);
+			path = ATView;
+			sourceTree = "<group>";
+		};
+		88B959E8227C712B00E2BEC8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				88B959A5227C6C6300E2BEC8 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88B95998227C6C6100E2BEC8 /* MOONATProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B959C5227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATProject" */;
+			buildPhases = (
+				88B95995227C6C6100E2BEC8 /* Sources */,
+				88B95996227C6C6100E2BEC8 /* Frameworks */,
+				88B95997227C6C6100E2BEC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOONATProject;
+			productName = MOONATProject;
+			productReference = 88B95999227C6C6100E2BEC8 /* MOONATProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88B959B0227C6C6300E2BEC8 /* MOONATProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B959C8227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATProjectTests" */;
+			buildPhases = (
+				88B959AD227C6C6300E2BEC8 /* Sources */,
+				88B959AE227C6C6300E2BEC8 /* Frameworks */,
+				88B959AF227C6C6300E2BEC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B959B3227C6C6300E2BEC8 /* PBXTargetDependency */,
+			);
+			name = MOONATProjectTests;
+			productName = MOONATProjectTests;
+			productReference = 88B959B1227C6C6300E2BEC8 /* MOONATProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88B959BB227C6C6300E2BEC8 /* MOONATProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B959CB227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATProjectUITests" */;
+			buildPhases = (
+				88B959B8227C6C6300E2BEC8 /* Sources */,
+				88B959B9227C6C6300E2BEC8 /* Frameworks */,
+				88B959BA227C6C6300E2BEC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B959BE227C6C6300E2BEC8 /* PBXTargetDependency */,
+			);
+			name = MOONATProjectUITests;
+			productName = MOONATProjectUITests;
+			productReference = 88B959BC227C6C6300E2BEC8 /* MOONATProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88B95991227C6C6100E2BEC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "月之暗面";
+				TargetAttributes = {
+					88B95998227C6C6100E2BEC8 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					88B959B0227C6C6300E2BEC8 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 88B95998227C6C6100E2BEC8;
+					};
+					88B959BB227C6C6300E2BEC8 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 88B95998227C6C6100E2BEC8;
+					};
+				};
+			};
+			buildConfigurationList = 88B95994227C6C6100E2BEC8 /* Build configuration list for PBXProject "MOONAssistiveTouch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88B95990227C6C6100E2BEC8;
+			productRefGroup = 88B9599A227C6C6100E2BEC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88B95998227C6C6100E2BEC8 /* MOONATProject */,
+				88B959B0227C6C6300E2BEC8 /* MOONATProjectTests */,
+				88B959BB227C6C6300E2BEC8 /* MOONATProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88B95997227C6C6100E2BEC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B959A9227C6C6300E2BEC8 /* LaunchScreen.storyboard in Resources */,
+				88B959A6227C6C6300E2BEC8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B959AF227C6C6300E2BEC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B959BA227C6C6300E2BEC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88B95995227C6C6100E2BEC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B959E3227C6CAC00E2BEC8 /* MOONATRootViewController.m in Sources */,
+				88B959AC227C6C6300E2BEC8 /* main.m in Sources */,
+				88B9599E227C6C6100E2BEC8 /* AppDelegate.m in Sources */,
+				88B959E2227C6CAC00E2BEC8 /* MOONATContentView.m in Sources */,
+				88B959E0227C6CAC00E2BEC8 /* MOONATCore.m in Sources */,
+				88B959E7227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m in Sources */,
+				88B959DF227C6CAC00E2BEC8 /* MOONATMenuItemAction.m in Sources */,
+				88B959E1227C6CAC00E2BEC8 /* MOONATSystemMenuView.m in Sources */,
+				88B959E4227C6CAC00E2BEC8 /* MOONATWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B959AD227C6C6300E2BEC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B959B6227C6C6300E2BEC8 /* MOONATProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B959B8227C6C6300E2BEC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B959C1227C6C6300E2BEC8 /* MOONATProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88B959B3227C6C6300E2BEC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B95998227C6C6100E2BEC8 /* MOONATProject */;
+			targetProxy = 88B959B2227C6C6300E2BEC8 /* PBXContainerItemProxy */;
+		};
+		88B959BE227C6C6300E2BEC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B95998227C6C6100E2BEC8 /* MOONATProject */;
+			targetProxy = 88B959BD227C6C6300E2BEC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88B959A7227C6C6300E2BEC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88B959A8227C6C6300E2BEC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88B959C3227C6C6300E2BEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88B959C4227C6C6300E2BEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88B959C6227C6C6300E2BEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J25KWTFJ2;
+				INFOPLIST_FILE = "$(SRCROOT)/DEMO/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONAssistiveTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		88B959C7227C6C6300E2BEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J25KWTFJ2;
+				INFOPLIST_FILE = "$(SRCROOT)/DEMO/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONAssistiveTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		88B959C9227C6C6300E2BEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MOONATProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONATProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOONATProject.app/MOONATProject";
+			};
+			name = Debug;
+		};
+		88B959CA227C6C6300E2BEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MOONATProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONATProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOONATProject.app/MOONATProject";
+			};
+			name = Release;
+		};
+		88B959CC227C6C6300E2BEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MOONATProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONATProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOONATProject;
+			};
+			name = Debug;
+		};
+		88B959CD227C6C6300E2BEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MOONATProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONATProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOONATProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88B95994227C6C6100E2BEC8 /* Build configuration list for PBXProject "MOONAssistiveTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B959C3227C6C6300E2BEC8 /* Debug */,
+				88B959C4227C6C6300E2BEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B959C5227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B959C6227C6C6300E2BEC8 /* Debug */,
+				88B959C7227C6C6300E2BEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B959C8227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B959C9227C6C6300E2BEC8 /* Debug */,
+				88B959CA227C6C6300E2BEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B959CB227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B959CC227C6C6300E2BEC8 /* Debug */,
+				88B959CD227C6C6300E2BEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88B95991227C6C6100E2BEC8 /* Project object */;
+}
