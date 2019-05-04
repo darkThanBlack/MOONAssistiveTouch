@@ -8,7 +8,7 @@
 
 #import "AssistiveTouchDemoViewController.h"
 
-//#import "MOONATCore.h"
+#import "MOONATCore.h"
 
 @interface AssistiveTouchDemoViewController ()
 
@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [[MOONATCore core]configMenuItemActions:nil];
-//    [[MOONATCore core] start];
+    [[MOONATCore core]configMenuItemActions:nil];
+    [[MOONATCore core] start];
 }
 
 @end
