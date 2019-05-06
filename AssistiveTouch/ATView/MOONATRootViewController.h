@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 ///浮窗根控制器
 @interface MOONATRootViewController : UIViewController
 
+/**
+ 通用事件列表，核心属性
+ 
+ 交由具体的 menuView 解析
+ */
 @property (nonatomic, strong) NSArray<MOONATMenuItemAction *> *actions;
 
 @end

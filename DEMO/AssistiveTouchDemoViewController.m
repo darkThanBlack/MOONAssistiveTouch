@@ -8,7 +8,7 @@
 
 #import "AssistiveTouchDemoViewController.h"
 
-#import "MOONATCore.h"
+#import "MOONAssistiveTouch/MOONATCore.h"
 
 @interface AssistiveTouchDemoViewController ()
 

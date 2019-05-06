@@ -28,10 +28,16 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 ///自定义菜单
 @property (nonatomic, strong) MOONATSystemMenuView *menuView_0;
 
+///记录吸附模式
 @property (nonatomic, assign) NSInteger absorbIndex;
 
+///皮肤属性源数组
 @property (nonatomic, strong) NSMutableArray<NSDictionary *> *skinArray;
+
+///当前皮肤
 @property (nonatomic, strong) NSDictionary *skin;
+
+///默认图片数组
 @property (nonatomic, strong) NSMutableArray<NSString *> *imageNameArray;
 
 @end
@@ -157,7 +163,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     [self.menuView_0 configWithSkin:self.skin actions:_actions];
 }
 
-//检查actions的空属性并补充相应的皮肤，图片等
+//检查 actions 的空属性并补充相应的皮肤，图片等
 - (void)configDataWithActions:(NSArray<MOONATMenuItemAction *> *)actions
 {
     for (NSInteger i = 0; i < actions.count; i++) {
@@ -166,7 +172,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
             [self configDataWithActions:action.subActions];  //递归设置子菜单样式
         }
         
-        //设置默认属性
+        //为空时设置默认属性
         if (!action.title) {
             action.title = [NSString stringWithFormat:@"%ld", (long)i];
         }
@@ -177,7 +183,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
             action.skin = self.skin;
         }
         
-        //设置触发事件
+        //绑定触发事件
         [action bindAssistiveTouchActionBlock:^(MOONAssistiveTouchActionMode actionMode, NSDictionary * _Nonnull params) {
             switch (actionMode) {
                 case MOONAssistiveTouchActionModeClose:

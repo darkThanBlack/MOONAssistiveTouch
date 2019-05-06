@@ -14,7 +14,12 @@
 {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSURL *bundleUrl = [bundle URLForResource:@"MOONAssistiveTouchResource" withExtension:@"bundle"];
-    NSBundle *currentBundle = [NSBundle bundleWithURL:bundleUrl];
+    NSBundle *currentBundle = nil;
+    if (bundleUrl) {
+       currentBundle = [NSBundle bundleWithURL:bundleUrl];
+    } else {
+        currentBundle = [NSBundle mainBundle];
+    }
     
     if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)]) {
         return [UIImage imageNamed:imageName inBundle:currentBundle compatibleWithTraitCollection:nil];
