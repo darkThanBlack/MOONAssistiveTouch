@@ -22,6 +22,8 @@ static MOONATCore *core_ = nil;
 
 @implementation MOONATCore
 
+#pragma mark Life Cycle
+
 + (MOONATCore *)core
 {
     static dispatch_once_t onceToken;
@@ -32,7 +34,7 @@ static MOONATCore *core_ = nil;
     return core_;
 }
 
-#pragma mark -
+#pragma mark Getter
 
 - (MOONATRootViewController *)rootVC
 {
@@ -57,6 +59,23 @@ static MOONATCore *core_ = nil;
     return _window;
 }
 
+#pragma mark - Interface
+
+/**
+ 配置菜单按钮与对应事件
+ 
+ 示例：构建一个按钮
+ 
+ ```
+ 
+     MOONATMenuItemAction *action_demo = [MOONATMenuItemAction actionWithTitle:@"demo" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
+         [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeClose params:nil];
+     }];
+ 
+ ```
+
+ @param actions actions description
+ */
 - (void)configMenuItemActions:(NSArray<MOONATMenuItemAction *> *)actions
 {
     if (actions && actions.count) {
@@ -77,7 +96,7 @@ static MOONATCore *core_ = nil;
     self.window.hidden = YES;
 }
 
-#pragma mark -
+#pragma mark - Demo
 
 - (NSArray<MOONATMenuItemAction *> *)defaultActions
 {

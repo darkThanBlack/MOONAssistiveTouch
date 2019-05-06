@@ -7,7 +7,7 @@
 //
 
 #import "MOONATSystemMenuView.h"
-
+#import "MOONATMenuHelper.h"
 #import "MOONATMenuItemAction.h"
 
 #ifndef j2h
@@ -62,10 +62,6 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
 
 - (void)bindSkin:(NSDictionary *)skin
 {
-    NSString *skinImage = [skin objectForKey:@"skinImage"];
-    if (skinImage) {
-        [self.imageView setImage:[UIImage imageNamed:skinImage]];
-    }
     UIColor *textColor = [skin objectForKey:@"textColor"];
     if (textColor) {
         self.titleLabel.textColor = textColor;
@@ -104,7 +100,7 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
     [self addGestureRecognizer:singleTap];
 }
 
-///TODO:不应该在内部调整自身高度,不是好写法，待改进
+///FIXME:不应该在内部调整自身高度,不是好写法，待改进
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -143,7 +139,7 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
  */
 - (void)bindAction:(MOONATMenuItemAction *)action subMenuAction:(void (^)(MOONATMenuItemAction *action))handler
 {
-    [self.imageView setImage:[UIImage imageNamed:action.localImageName]];
+    [self.imageView setImage:[MOONATMenuHelper imageNamed:action.localImageName]];
     self.titleLabel.text = action.title;
     
     if (action.skin) {
@@ -234,7 +230,7 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
         _imageView = [[UIImageView alloc]init];
         _imageView.contentMode = UIViewContentModeScaleAspectFill;
         _imageView.backgroundColor = [UIColor clearColor];
-        [_imageView setImage:[UIImage imageNamed:@"moonShadow"]];
+        [_imageView setImage:[MOONATMenuHelper imageNamed:@"moonShadow"]];
         _imageView.layer.masksToBounds = YES;
         _imageView.layer.cornerRadius = 18.0;
     }

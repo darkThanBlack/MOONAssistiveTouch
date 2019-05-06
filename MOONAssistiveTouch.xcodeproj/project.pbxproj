@@ -61,6 +61,7 @@
 		88DB140C227D72D500275B56 /* MOON_AT_item_1_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E4227D72D500275B56 /* MOON_AT_item_1_11@2x.png */; };
 		88DB140D227D72D500275B56 /* MOON_AT_item_1_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */; };
 		88DB140E227D72D500275B56 /* MOON_AT_item_1_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */; };
+		A252F5A7227FDBED00A36207 /* MOONATMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A252F5A6227FDBED00A36207 /* MOONATMenuHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,8 @@
 		88DB13E4227D72D500275B56 /* MOON_AT_item_1_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_11@2x.png"; sourceTree = "<group>"; };
 		88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_13@2x.png"; sourceTree = "<group>"; };
 		88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_1@2x.png"; sourceTree = "<group>"; };
+		A252F5A5227FDBED00A36207 /* MOONATMenuHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOONATMenuHelper.h; sourceTree = "<group>"; };
+		A252F5A6227FDBED00A36207 /* MOONATMenuHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOONATMenuHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,9 +248,9 @@
 			isa = PBXGroup;
 			children = (
 				88B959D0227C6CAC00E2BEC8 /* MOONATCore.h */,
+				88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */,
 				88B959D2227C6CAC00E2BEC8 /* MOONATMenuItemAction.h */,
 				88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */,
-				88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -255,6 +258,8 @@
 		88B959D4227C6CAC00E2BEC8 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				A252F5A5227FDBED00A36207 /* MOONATMenuHelper.h */,
+				A252F5A6227FDBED00A36207 /* MOONATMenuHelper.m */,
 				88B959D5227C6CAC00E2BEC8 /* SystemMenu */,
 			);
 			path = Menu;
@@ -524,6 +529,7 @@
 				88B959E7227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m in Sources */,
 				88B959DF227C6CAC00E2BEC8 /* MOONATMenuItemAction.m in Sources */,
 				88B959E1227C6CAC00E2BEC8 /* MOONATSystemMenuView.m in Sources */,
+				A252F5A7227FDBED00A36207 /* MOONATMenuHelper.m in Sources */,
 				88B959E4227C6CAC00E2BEC8 /* MOONATWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

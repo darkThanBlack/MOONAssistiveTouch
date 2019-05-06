@@ -187,12 +187,11 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
                     break;
                 case MOONAssistiveTouchActionModeChangeSkin:
                 {
-                    //FIXME:换皮只能在第一层主菜单进行，子菜单触发布局事件设计时尚未考虑到
+                    //FIXME:换皮只能在第一层主菜单进行,子菜单触发布局事件设计时尚未考虑到,应全部交予action进行,突破第一层限制
                     [self changeSkin];
                     
                     self.actions = self.actions;
                     //重设为打开状态
-                    //FIXME:应全部交予action进行,突破第一层限制
                     [self.menuView_0 configOpenStateWithFrame:self.menuView_0.frame animated:NO completion:nil];
                 }
                     break;
@@ -235,7 +234,6 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 
 - (void)assistiveTouchedEvent:(UITapGestureRecognizer *)gesture
 {
-    //TODO:update to a good frame
     [self.contentView updateContentViewState];
 }
 
