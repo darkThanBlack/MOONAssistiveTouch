@@ -1,8 +1,14 @@
 # MOONAssistiveTouch
 
+![](<https://img.shields.io/badge/license-WTFPL-lightgrey.svg>)  ![](<https://img.shields.io/badge/platform-iOS-lightgrey.svg>)  ![](<https://img.shields.io/badge/CocoaPods-v0.0.1-blue.svg>)  ![](<https://img.shields.io/badge/Carthage-compatible-brightgreen.svg>)
+
 ### 这是什么？
 
 一组仿照系统“便捷访问”浮窗按钮样式设计的 UI 控件，可以用于代码调试。
+
+### 无图无真相
+
+![](./DEMO/DEMO.gif)
 
 ### 如何安装？
 

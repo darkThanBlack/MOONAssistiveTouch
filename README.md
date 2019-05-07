@@ -1,14 +1,20 @@
 # MOONAssistiveTouch
 
+![](<https://img.shields.io/badge/license-WTFPL-lightgrey.svg>)  ![](<https://img.shields.io/badge/platform-iOS-lightgrey.svg>)  ![](<https://img.shields.io/badge/CocoaPods-v0.0.1-blue.svg>)  ![](<https://img.shields.io/badge/Carthage-compatible-brightgreen.svg>)
+
 ### WO ZI JI YE KAN BU DONG
 
 [简体中文版介绍](./README_CN.md)
 
-### WHO AM I
+### Who am I
 
 A bundle of debug UI that looks like iOS system AssistiveTouch.
 
-### HOW TO SETUP
+### Talk is CHEAP, show me the GIF
+
+![](./DEMO/DEMO.gif)
+
+### How to SETUP
 
 * CocoaPods:
 
@@ -26,7 +32,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   github "darkThanBlack/MOONAssistiveTouch"
   ```
 
-###HOW TO USE
+###How to USE
 
 * JUST SEE SEE:
 
@@ -75,12 +81,12 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   }
   ```
 
-###HELPER
+###Helper
 
 * [DEMO](./MOONAssistiveTouch.xcodeproj)
 * [Doxygen](./Doc/html/index.html) include **BUG LIST**
 
-### WHAT IS THIS?
+### What is THIS?
 
 * [What is CocoaPods?](<https://github.com/CocoaPods/CocoaPods>)
 * [What is Carthage?](<https://github.com/Carthage/Carthage>)
