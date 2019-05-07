@@ -32,7 +32,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   github "darkThanBlack/MOONAssistiveTouch"
   ```
 
-###How to USE
+### How to USE
 
 * JUST SEE SEE:
 
@@ -81,7 +81,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   }
   ```
 
-###Helper
+### Helper
 
 * [DEMO](./MOONAssistiveTouch.xcodeproj)
 * [Doxygen](./Doc/html/index.html) include **BUG LIST**
