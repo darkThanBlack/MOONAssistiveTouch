@@ -1,18 +1,15 @@
 # MOONAssistiveTouch
 
-### WO ZI JI YE KAN BU DONG
+### 这是什么？
 
-[简体中文版介绍](./README_CN.md)
+一组仿照系统“便捷访问”浮窗按钮样式设计的 UI 控件，可以用于代码调试。
 
-### WHO AM I
+### 如何安装？
 
-A bundle of debug UI that looks like iOS system AssistiveTouch.
-
-### HOW TO SETUP
-
-* CocoaPods:
+- CocoaPods:
 
   ```c
+  //未上传到公有服务器，需要在 Podfile 内指定来源
   source 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
   
   platform :ios, '9.0'
@@ -20,15 +17,15 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
   ```
 
-* Carthage:
+- Carthage:
 
   ```c
   github "darkThanBlack/MOONAssistiveTouch"
   ```
 
-###HOW TO USE
+### 如何使用？
 
-* JUST SEE SEE:
+- 仅展示默认DEMO效果:
 
   ```objective-c
   #import "MOONAssistiveTouch/MOONATCore.h"
@@ -39,10 +36,10 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   }
   ```
 
-* Sample codes:
+- 示例代码:
 
   ```objective-c
-  //adapt cocoapods and carthage
+  //可以同时适应 cocoapods 和 carthage 两种方式引入
   #import "MOONAssistiveTouch/MOONATCore.h"
   
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -50,11 +47,13 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
       [[MOONATCore core] start];
   }
   
+  ///构建菜单按钮列表
   - (NSArray<MOONATMenuItemAction *> *)demoActions
   {
+      //创建菜单按钮模型
       MOONATMenuItemAction *action_skin = [MOONATMenuItemAction actionWithTitle:@"换肤" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-          [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeChangeSkin params:nil];
-          //do what you want to do
+          [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeChangeSkin params:nil];  //触发浮窗或者菜单预先定义的一些方法
+          //在 block 里面写自己需要触发的事件
       }];
   
       MOONATMenuItemAction *action_delay = [MOONATMenuItemAction actionWithTitle:@"延时变淡" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
@@ -69,22 +68,23 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
           
       }];
       
+      //适用于个数较多，需要子菜单的情况
       action_appearaence.subActions = @[action_delay, action_absorb];
   	
       return @[action_skin, action_appearaence, action_sub];
   }
   ```
 
-###HELPER
+### 文档
 
-* [DEMO](./MOONAssistiveTouch.xcodeproj)
-* [Doxygen](./Doc/html/index.html) include **BUG LIST**
+- [DEMO](./MOONAssistiveTouch.xcodeproj)
+- [Doxygen](./Doc/html/index.html) include **BUG LIST**
 
-### WHAT IS THIS?
+### 名词解释
 
-* [What is CocoaPods?](<https://github.com/CocoaPods/CocoaPods>)
-* [What is Carthage?](<https://github.com/Carthage/Carthage>)
-* [What is Doxygen?](<http://www.doxygen.nl/>)
+- [What is CocoaPods?](<https://github.com/CocoaPods/CocoaPods>)
+- [What is Carthage?](<https://github.com/Carthage/Carthage>)
+- [What is Doxygen?](<http://www.doxygen.nl/>)
 
 ### LICENSE
 
