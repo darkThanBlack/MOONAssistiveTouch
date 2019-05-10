@@ -18,7 +18,7 @@
   //未上传到公有服务器，需要在 Podfile 内指定来源
   source 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
   
-  platform :ios, '9.0'
+  platform :ios, '8.0'
   
   pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
   ```
@@ -37,7 +37,7 @@
   #import "MOONAssistiveTouch/MOONATCore.h"
   
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-      [[MOONATCore core]configMenuItemActions:nil];
+      [[MOONATCore core]configMenuItemActions:[MOONATCore demoActions]];
       [[MOONATCore core] start];
   }
   ```

@@ -21,7 +21,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   ```c
   source 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
   
-  platform :ios, '9.0'
+  platform :ios, '8.0'
   
   pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
   ```
@@ -40,7 +40,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   #import "MOONAssistiveTouch/MOONATCore.h"
   
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-      [[MOONATCore core]configMenuItemActions:nil];
+      [[MOONATCore core]configMenuItemActions:[MOONATCore demoActions]];
       [[MOONATCore core] start];
   }
   ```
