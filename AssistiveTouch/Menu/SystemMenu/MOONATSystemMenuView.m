@@ -50,7 +50,11 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
 {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc]init];
-        _titleLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightLight];
+        if (@available(iOS 8.2, *)) {
+            _titleLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightLight];
+        } else {
+            _titleLabel.font = [UIFont systemFontOfSize:14];
+        }
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.numberOfLines = 0;
@@ -241,7 +245,11 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
 {
     if (!_toastLabel) {
         _toastLabel = [[UILabel alloc]init];
-        _toastLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightMedium];
+        if (@available(iOS 8.2, *)) {
+            _toastLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightMedium];
+        } else {
+            _toastLabel.font = [UIFont systemFontOfSize:20.0];
+        }
         _toastLabel.textAlignment = NSTextAlignmentCenter;
         _toastLabel.alpha = 0.0;
         _toastLabel.textColor = [UIColor blackColor];
@@ -258,7 +266,11 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
         [_backButton setTitle:@"返回" forState:UIControlStateHighlighted];
         [_backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_backButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-        _backButton.titleLabel.font = [UIFont systemFontOfSize:16.0 weight:UIFontWeightHeavy];
+        if (@available(iOS 8.2, *)) {
+            _backButton.titleLabel.font = [UIFont systemFontOfSize:16.0 weight:UIFontWeightHeavy];
+        } else {
+            _backButton.titleLabel.font = [UIFont systemFontOfSize:16.0];
+        }
         
         _backButton.layer.masksToBounds = YES;
         _backButton.layer.borderWidth = 1.0;

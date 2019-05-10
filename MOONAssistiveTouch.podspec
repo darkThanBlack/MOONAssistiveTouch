@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "MOONAssistiveTouch"
   s.version      = "0.0.1"
-s.summary      = "An UI bundle like iOS system AssistiveTouch view"
+  s.summary      = "A bundle of debug UI that looks like iOS system AssistiveTouch."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,8 +25,8 @@ s.summary      = "An UI bundle like iOS system AssistiveTouch view"
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-An UI bundle like iOS system AssistiveTouch view, use to debug menu.
-一个仿照iOS系统浮窗的UI控件, 用于集成调试。
+A bundle of debug UI that looks like iOS system AssistiveTouch.
+一组仿照系统“便捷访问”浮窗按钮样式设计的 UI 控件，可以用于代码调试。
                    DESC
 
   s.homepage     = "https://github.com/darkThanBlack/MOONAssistiveTouch"
@@ -40,8 +40,8 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "WTFPL"
+  s.license      = { :type => "WTFPL", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -68,7 +68,8 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   # s.platform = ios
 
   #  When using multiple platforms
-  s.ios.deployment_target = "9.0"
+
+  s.ios.deployment_target = "8.0"
 
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
@@ -95,7 +96,7 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   s.source_files  = "AssistiveTouch/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "AssistiveTouch/Core/*.h"
+  s.public_header_files = "AssistiveTouch/Core/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -106,10 +107,10 @@ An UI bundle like iOS system AssistiveTouch view, use to debug menu.
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource = "Resource/**/**/*"
+  s.resource = "Resource/*.bundle"
   # s.resources = "Resources/**/**/*.png"
 
-  s.resource_bundle = { 'MOONAssistiveTouchResource' => ['Resource/**/*.png'] }
+  # s.resource_bundle = { 'MOONAssistiveTouchResource' => ['Resource/**/*.png'] }
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 

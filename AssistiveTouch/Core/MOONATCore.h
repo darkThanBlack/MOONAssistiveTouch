@@ -18,7 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (MOONATCore *)core;
 
-//配置菜单按钮与对应事件,传nil查看示例
+//默认菜单，Demo展示用
++ (NSArray<MOONATMenuItemAction *> *)demoActions;
+
+//配置菜单按钮与对应事件,传demoActions查看示例
 - (void)configMenuItemActions:(NSArray<MOONATMenuItemAction *> *)actions;
 
 //显示浮窗

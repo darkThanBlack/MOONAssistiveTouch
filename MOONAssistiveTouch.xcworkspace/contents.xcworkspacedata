@@ -5,6 +5,6 @@
       location = "group:MOONAssistiveTouch.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MOONAssistiveTouchDemo/MOONAssistiveTouchDemo.xcodeproj">
+      location = "group:Demo/MOONAssistiveTouchDemo.xcodeproj">
    </FileRef>
 </Workspace>

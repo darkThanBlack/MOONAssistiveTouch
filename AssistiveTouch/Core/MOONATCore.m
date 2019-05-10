@@ -81,7 +81,7 @@ static MOONATCore *core_ = nil;
     if (actions && actions.count) {
         self.rootVC.actions = actions;
     } else {
-        self.rootVC.actions = [self defaultActions];
+        self.rootVC.actions = [MOONATCore demoActions];
     }
 }
 
@@ -98,7 +98,7 @@ static MOONATCore *core_ = nil;
 
 #pragma mark - Demo
 
-- (NSArray<MOONATMenuItemAction *> *)defaultActions
++ (NSArray<MOONATMenuItemAction *> *)demoActions
 {
     MOONATMenuItemAction *action_skin = [MOONATMenuItemAction actionWithTitle:@"换肤" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
         [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeChangeSkin params:nil];

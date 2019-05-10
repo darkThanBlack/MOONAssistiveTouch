@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22910BB228524CF009725C3 /* MOONAssistiveTouchResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A29919A42280371400469729 /* MOONAssistiveTouchResource.bundle */; };
 		A24721F1228026B300084BFE /* MOONATCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */; };
 		A24721F2228026B300084BFE /* MOONATMenuItemAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */; };
 		A24721F3228026B300084BFE /* MOONATMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A252F5A6227FDBED00A36207 /* MOONATMenuHelper.m */; };
@@ -16,48 +17,6 @@
 		A24721F7228026B300084BFE /* MOONATWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */; };
 		A24EE20522801D1D0029D09F /* MOONATCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B959D0227C6CAC00E2BEC8 /* MOONATCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24EE20722801D1D0029D09F /* MOONATMenuItemAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B959D2227C6CAC00E2BEC8 /* MOONATMenuItemAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A299197A2280364C00469729 /* MOON_AT_item_0_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BE227D72D500275B56 /* MOON_AT_item_0_4@2x.png */; };
-		A299197B2280364C00469729 /* MOON_AT_item_0_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BF227D72D500275B56 /* MOON_AT_item_0_8@2x.png */; };
-		A299197C2280364C00469729 /* MOON_AT_item_0_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C0227D72D500275B56 /* MOON_AT_item_0_10@2x.png */; };
-		A299197D2280364C00469729 /* MOON_AT_item_0_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C1227D72D500275B56 /* MOON_AT_item_0_6@2x.png */; };
-		A299197E2280364C00469729 /* MOON_AT_item_0_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C2227D72D500275B56 /* MOON_AT_item_0_12@2x.png */; };
-		A299197F2280364C00469729 /* MOON_AT_item_0_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C3227D72D500275B56 /* MOON_AT_item_0_16@2x.png */; };
-		A29919802280364C00469729 /* MOON_AT_item_0_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C4227D72D500275B56 /* MOON_AT_item_0_2@2x.png */; };
-		A29919812280364C00469729 /* MOON_AT_item_0_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C5227D72D500275B56 /* MOON_AT_item_0_14@2x.png */; };
-		A29919822280364C00469729 /* MOON_AT_item_0_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C6227D72D500275B56 /* MOON_AT_item_0_18@2x.png */; };
-		A29919832280364C00469729 /* MOON_AT_item_0_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C7227D72D500275B56 /* MOON_AT_item_0_0@2x.png */; };
-		A29919842280364C00469729 /* MOON_AT_item_0_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C8227D72D500275B56 /* MOON_AT_item_0_11@2x.png */; };
-		A29919852280364C00469729 /* MOON_AT_item_0_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C9227D72D500275B56 /* MOON_AT_item_0_5@2x.png */; };
-		A29919862280364C00469729 /* MOON_AT_item_0_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CA227D72D500275B56 /* MOON_AT_item_0_9@2x.png */; };
-		A29919872280364C00469729 /* MOON_AT_item_0_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CB227D72D500275B56 /* MOON_AT_item_0_13@2x.png */; };
-		A29919882280364C00469729 /* MOON_AT_item_0_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CC227D72D500275B56 /* MOON_AT_item_0_7@2x.png */; };
-		A29919892280364C00469729 /* MOON_AT_item_0_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CD227D72D500275B56 /* MOON_AT_item_0_3@2x.png */; };
-		A299198A2280364C00469729 /* MOON_AT_item_0_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CE227D72D500275B56 /* MOON_AT_item_0_17@2x.png */; };
-		A299198B2280364C00469729 /* MOON_AT_item_0_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CF227D72D500275B56 /* MOON_AT_item_0_1@2x.png */; };
-		A299198C2280364C00469729 /* MOON_AT_item_0_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D0227D72D500275B56 /* MOON_AT_item_0_15@2x.png */; };
-		A299198D2280364C00469729 /* MOON_AT_item_0_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D1227D72D500275B56 /* MOON_AT_item_0_19@2x.png */; };
-		A299198E2280364C00469729 /* MOON_AT_item_1_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D3227D72D500275B56 /* MOON_AT_item_1_4@2x.png */; };
-		A299198F2280364C00469729 /* MOON_AT_item_1_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D4227D72D500275B56 /* MOON_AT_item_1_8@2x.png */; };
-		A29919902280364C00469729 /* MOON_AT_item_1_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D5227D72D500275B56 /* MOON_AT_item_1_16@2x.png */; };
-		A29919912280364C00469729 /* MOON_AT_item_1_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D6227D72D500275B56 /* MOON_AT_item_1_18@2x.png */; };
-		A29919922280364C00469729 /* MOON_AT_item_1_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D7227D72D500275B56 /* MOON_AT_item_1_14@2x.png */; };
-		A29919932280364C00469729 /* MOON_AT_item_1_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D8227D72D500275B56 /* MOON_AT_item_1_6@2x.png */; };
-		A29919942280364C00469729 /* MOON_AT_item_1_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D9227D72D500275B56 /* MOON_AT_item_1_10@2x.png */; };
-		A29919952280364C00469729 /* MOON_AT_item_1_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DA227D72D500275B56 /* MOON_AT_item_1_2@2x.png */; };
-		A29919962280364C00469729 /* MOON_AT_item_1_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DB227D72D500275B56 /* MOON_AT_item_1_0@2x.png */; };
-		A29919972280364C00469729 /* MOON_AT_item_1_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DC227D72D500275B56 /* MOON_AT_item_1_12@2x.png */; };
-		A29919982280364C00469729 /* MOON_AT_item_1_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DD227D72D500275B56 /* MOON_AT_item_1_17@2x.png */; };
-		A29919992280364C00469729 /* MOON_AT_item_1_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DE227D72D500275B56 /* MOON_AT_item_1_5@2x.png */; };
-		A299199A2280364C00469729 /* MOON_AT_item_1_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DF227D72D500275B56 /* MOON_AT_item_1_9@2x.png */; };
-		A299199B2280364C00469729 /* MOON_AT_item_1_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E0227D72D500275B56 /* MOON_AT_item_1_7@2x.png */; };
-		A299199C2280364C00469729 /* MOON_AT_item_1_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E1227D72D500275B56 /* MOON_AT_item_1_19@2x.png */; };
-		A299199D2280364C00469729 /* MOON_AT_item_1_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E2227D72D500275B56 /* MOON_AT_item_1_15@2x.png */; };
-		A299199E2280364C00469729 /* MOON_AT_item_1_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E3227D72D500275B56 /* MOON_AT_item_1_3@2x.png */; };
-		A299199F2280364C00469729 /* MOON_AT_item_1_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E4227D72D500275B56 /* MOON_AT_item_1_11@2x.png */; };
-		A29919A02280364C00469729 /* MOON_AT_item_1_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */; };
-		A29919A12280364C00469729 /* MOON_AT_item_1_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */; };
-		A29919A22280364C00469729 /* moonShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BB227D71F000275B56 /* moonShadow.png */; };
-		A29919A62280372D00469729 /* MOONAssistiveTouchResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A29919A42280371400469729 /* MOONAssistiveTouchResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,51 +32,8 @@
 		88B959DC227C6CAC00E2BEC8 /* MOONATContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATContentView.h; sourceTree = "<group>"; };
 		88B959DD227C6CAC00E2BEC8 /* MOONATWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATWindow.h; sourceTree = "<group>"; };
 		88B959DE227C6CAC00E2BEC8 /* MOONATRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATRootViewController.h; sourceTree = "<group>"; };
-		88DB13BB227D71F000275B56 /* moonShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moonShadow.png; sourceTree = "<group>"; };
-		88DB13BE227D72D500275B56 /* MOON_AT_item_0_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_4@2x.png"; sourceTree = "<group>"; };
-		88DB13BF227D72D500275B56 /* MOON_AT_item_0_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_8@2x.png"; sourceTree = "<group>"; };
-		88DB13C0227D72D500275B56 /* MOON_AT_item_0_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_10@2x.png"; sourceTree = "<group>"; };
-		88DB13C1227D72D500275B56 /* MOON_AT_item_0_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_6@2x.png"; sourceTree = "<group>"; };
-		88DB13C2227D72D500275B56 /* MOON_AT_item_0_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_12@2x.png"; sourceTree = "<group>"; };
-		88DB13C3227D72D500275B56 /* MOON_AT_item_0_16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_16@2x.png"; sourceTree = "<group>"; };
-		88DB13C4227D72D500275B56 /* MOON_AT_item_0_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_2@2x.png"; sourceTree = "<group>"; };
-		88DB13C5227D72D500275B56 /* MOON_AT_item_0_14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_14@2x.png"; sourceTree = "<group>"; };
-		88DB13C6227D72D500275B56 /* MOON_AT_item_0_18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_18@2x.png"; sourceTree = "<group>"; };
-		88DB13C7227D72D500275B56 /* MOON_AT_item_0_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_0@2x.png"; sourceTree = "<group>"; };
-		88DB13C8227D72D500275B56 /* MOON_AT_item_0_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_11@2x.png"; sourceTree = "<group>"; };
-		88DB13C9227D72D500275B56 /* MOON_AT_item_0_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_5@2x.png"; sourceTree = "<group>"; };
-		88DB13CA227D72D500275B56 /* MOON_AT_item_0_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_9@2x.png"; sourceTree = "<group>"; };
-		88DB13CB227D72D500275B56 /* MOON_AT_item_0_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_13@2x.png"; sourceTree = "<group>"; };
-		88DB13CC227D72D500275B56 /* MOON_AT_item_0_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_7@2x.png"; sourceTree = "<group>"; };
-		88DB13CD227D72D500275B56 /* MOON_AT_item_0_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_3@2x.png"; sourceTree = "<group>"; };
-		88DB13CE227D72D500275B56 /* MOON_AT_item_0_17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_17@2x.png"; sourceTree = "<group>"; };
-		88DB13CF227D72D500275B56 /* MOON_AT_item_0_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_1@2x.png"; sourceTree = "<group>"; };
-		88DB13D0227D72D500275B56 /* MOON_AT_item_0_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_15@2x.png"; sourceTree = "<group>"; };
-		88DB13D1227D72D500275B56 /* MOON_AT_item_0_19@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_19@2x.png"; sourceTree = "<group>"; };
-		88DB13D3227D72D500275B56 /* MOON_AT_item_1_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_4@2x.png"; sourceTree = "<group>"; };
-		88DB13D4227D72D500275B56 /* MOON_AT_item_1_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_8@2x.png"; sourceTree = "<group>"; };
-		88DB13D5227D72D500275B56 /* MOON_AT_item_1_16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_16@2x.png"; sourceTree = "<group>"; };
-		88DB13D6227D72D500275B56 /* MOON_AT_item_1_18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_18@2x.png"; sourceTree = "<group>"; };
-		88DB13D7227D72D500275B56 /* MOON_AT_item_1_14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_14@2x.png"; sourceTree = "<group>"; };
-		88DB13D8227D72D500275B56 /* MOON_AT_item_1_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_6@2x.png"; sourceTree = "<group>"; };
-		88DB13D9227D72D500275B56 /* MOON_AT_item_1_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_10@2x.png"; sourceTree = "<group>"; };
-		88DB13DA227D72D500275B56 /* MOON_AT_item_1_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_2@2x.png"; sourceTree = "<group>"; };
-		88DB13DB227D72D500275B56 /* MOON_AT_item_1_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_0@2x.png"; sourceTree = "<group>"; };
-		88DB13DC227D72D500275B56 /* MOON_AT_item_1_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_12@2x.png"; sourceTree = "<group>"; };
-		88DB13DD227D72D500275B56 /* MOON_AT_item_1_17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_17@2x.png"; sourceTree = "<group>"; };
-		88DB13DE227D72D500275B56 /* MOON_AT_item_1_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_5@2x.png"; sourceTree = "<group>"; };
-		88DB13DF227D72D500275B56 /* MOON_AT_item_1_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_9@2x.png"; sourceTree = "<group>"; };
-		88DB13E0227D72D500275B56 /* MOON_AT_item_1_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_7@2x.png"; sourceTree = "<group>"; };
-		88DB13E1227D72D500275B56 /* MOON_AT_item_1_19@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_19@2x.png"; sourceTree = "<group>"; };
-		88DB13E2227D72D500275B56 /* MOON_AT_item_1_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_15@2x.png"; sourceTree = "<group>"; };
-		88DB13E3227D72D500275B56 /* MOON_AT_item_1_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_3@2x.png"; sourceTree = "<group>"; };
-		88DB13E4227D72D500275B56 /* MOON_AT_item_1_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_11@2x.png"; sourceTree = "<group>"; };
-		88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_13@2x.png"; sourceTree = "<group>"; };
-		88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_1_1@2x.png"; sourceTree = "<group>"; };
 		A24722272280293700084BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A24722292280293C00084BFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A2472233228031D600084BFE /* MOONAssistiveTouchResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOONAssistiveTouchResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2472235228031D600084BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24EE1E522801C790029D09F /* MOONAssistiveTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOONAssistiveTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24EE1E822801C790029D09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A252F5A5227FDBED00A36207 /* MOONATMenuHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOONATMenuHelper.h; sourceTree = "<group>"; };
@@ -126,13 +42,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A2472230228031D600084BFE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A24EE1E222801C790029D09F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +57,6 @@
 			children = (
 				88B959E8227C712B00E2BEC8 /* Resource */,
 				88B959CE227C6CAC00E2BEC8 /* AssistiveTouch */,
-				A2472234228031D600084BFE /* MOONAssistiveTouchResource */,
 				88B9599A227C6C6100E2BEC8 /* Products */,
 				A24722262280293700084BFE /* Frameworks */,
 			);
@@ -158,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				A24EE1E522801C790029D09F /* MOONAssistiveTouch.framework */,
-				A2472233228031D600084BFE /* MOONAssistiveTouchResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,65 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				A29919A42280371400469729 /* MOONAssistiveTouchResource.bundle */,
-				88DB13BD227D72D500275B56 /* 0 */,
-				88DB13D2227D72D500275B56 /* 1 */,
-				88DB13BB227D71F000275B56 /* moonShadow.png */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		88DB13BD227D72D500275B56 /* 0 */ = {
-			isa = PBXGroup;
-			children = (
-				88DB13BE227D72D500275B56 /* MOON_AT_item_0_4@2x.png */,
-				88DB13BF227D72D500275B56 /* MOON_AT_item_0_8@2x.png */,
-				88DB13C0227D72D500275B56 /* MOON_AT_item_0_10@2x.png */,
-				88DB13C1227D72D500275B56 /* MOON_AT_item_0_6@2x.png */,
-				88DB13C2227D72D500275B56 /* MOON_AT_item_0_12@2x.png */,
-				88DB13C3227D72D500275B56 /* MOON_AT_item_0_16@2x.png */,
-				88DB13C4227D72D500275B56 /* MOON_AT_item_0_2@2x.png */,
-				88DB13C5227D72D500275B56 /* MOON_AT_item_0_14@2x.png */,
-				88DB13C6227D72D500275B56 /* MOON_AT_item_0_18@2x.png */,
-				88DB13C7227D72D500275B56 /* MOON_AT_item_0_0@2x.png */,
-				88DB13C8227D72D500275B56 /* MOON_AT_item_0_11@2x.png */,
-				88DB13C9227D72D500275B56 /* MOON_AT_item_0_5@2x.png */,
-				88DB13CA227D72D500275B56 /* MOON_AT_item_0_9@2x.png */,
-				88DB13CB227D72D500275B56 /* MOON_AT_item_0_13@2x.png */,
-				88DB13CC227D72D500275B56 /* MOON_AT_item_0_7@2x.png */,
-				88DB13CD227D72D500275B56 /* MOON_AT_item_0_3@2x.png */,
-				88DB13CE227D72D500275B56 /* MOON_AT_item_0_17@2x.png */,
-				88DB13CF227D72D500275B56 /* MOON_AT_item_0_1@2x.png */,
-				88DB13D0227D72D500275B56 /* MOON_AT_item_0_15@2x.png */,
-				88DB13D1227D72D500275B56 /* MOON_AT_item_0_19@2x.png */,
-			);
-			path = 0;
-			sourceTree = "<group>";
-		};
-		88DB13D2227D72D500275B56 /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				88DB13D3227D72D500275B56 /* MOON_AT_item_1_4@2x.png */,
-				88DB13D4227D72D500275B56 /* MOON_AT_item_1_8@2x.png */,
-				88DB13D5227D72D500275B56 /* MOON_AT_item_1_16@2x.png */,
-				88DB13D6227D72D500275B56 /* MOON_AT_item_1_18@2x.png */,
-				88DB13D7227D72D500275B56 /* MOON_AT_item_1_14@2x.png */,
-				88DB13D8227D72D500275B56 /* MOON_AT_item_1_6@2x.png */,
-				88DB13D9227D72D500275B56 /* MOON_AT_item_1_10@2x.png */,
-				88DB13DA227D72D500275B56 /* MOON_AT_item_1_2@2x.png */,
-				88DB13DB227D72D500275B56 /* MOON_AT_item_1_0@2x.png */,
-				88DB13DC227D72D500275B56 /* MOON_AT_item_1_12@2x.png */,
-				88DB13DD227D72D500275B56 /* MOON_AT_item_1_17@2x.png */,
-				88DB13DE227D72D500275B56 /* MOON_AT_item_1_5@2x.png */,
-				88DB13DF227D72D500275B56 /* MOON_AT_item_1_9@2x.png */,
-				88DB13E0227D72D500275B56 /* MOON_AT_item_1_7@2x.png */,
-				88DB13E1227D72D500275B56 /* MOON_AT_item_1_19@2x.png */,
-				88DB13E2227D72D500275B56 /* MOON_AT_item_1_15@2x.png */,
-				88DB13E3227D72D500275B56 /* MOON_AT_item_1_3@2x.png */,
-				88DB13E4227D72D500275B56 /* MOON_AT_item_1_11@2x.png */,
-				88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */,
-				88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */,
-			);
-			path = 1;
 			sourceTree = "<group>";
 		};
 		A24722262280293700084BFE /* Frameworks */ = {
@@ -289,14 +139,6 @@
 				A24722272280293700084BFE /* Foundation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A2472234228031D600084BFE /* MOONAssistiveTouchResource */ = {
-			isa = PBXGroup;
-			children = (
-				A2472235228031D600084BFE /* Info.plist */,
-			);
-			path = MOONAssistiveTouchResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,23 +156,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A2472232228031D600084BFE /* MOONAssistiveTouchResource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A2472236228031D600084BFE /* Build configuration list for PBXNativeTarget "MOONAssistiveTouchResource" */;
-			buildPhases = (
-				A247222F228031D600084BFE /* Sources */,
-				A2472230228031D600084BFE /* Frameworks */,
-				A2472231228031D600084BFE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MOONAssistiveTouchResource;
-			productName = MOONAssistiveTouchResource;
-			productReference = A2472233228031D600084BFE /* MOONAssistiveTouchResource.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		A24EE1E422801C790029D09F /* MOONAssistiveTouch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A24EE1FC22801C790029D09F /* Build configuration list for PBXNativeTarget "MOONAssistiveTouch" */;
@@ -358,9 +183,6 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "月之暗面";
 				TargetAttributes = {
-					A2472232228031D600084BFE = {
-						CreatedOnToolsVersion = 10.2;
-					};
 					A24EE1E422801C790029D09F = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -380,78 +202,22 @@
 			projectRoot = "";
 			targets = (
 				A24EE1E422801C790029D09F /* MOONAssistiveTouch */,
-				A2472232228031D600084BFE /* MOONAssistiveTouchResource */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A2472231228031D600084BFE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A299197A2280364C00469729 /* MOON_AT_item_0_4@2x.png in Resources */,
-				A299197B2280364C00469729 /* MOON_AT_item_0_8@2x.png in Resources */,
-				A299197C2280364C00469729 /* MOON_AT_item_0_10@2x.png in Resources */,
-				A299197D2280364C00469729 /* MOON_AT_item_0_6@2x.png in Resources */,
-				A299197E2280364C00469729 /* MOON_AT_item_0_12@2x.png in Resources */,
-				A299197F2280364C00469729 /* MOON_AT_item_0_16@2x.png in Resources */,
-				A29919802280364C00469729 /* MOON_AT_item_0_2@2x.png in Resources */,
-				A29919812280364C00469729 /* MOON_AT_item_0_14@2x.png in Resources */,
-				A29919822280364C00469729 /* MOON_AT_item_0_18@2x.png in Resources */,
-				A29919832280364C00469729 /* MOON_AT_item_0_0@2x.png in Resources */,
-				A29919842280364C00469729 /* MOON_AT_item_0_11@2x.png in Resources */,
-				A29919852280364C00469729 /* MOON_AT_item_0_5@2x.png in Resources */,
-				A29919862280364C00469729 /* MOON_AT_item_0_9@2x.png in Resources */,
-				A29919872280364C00469729 /* MOON_AT_item_0_13@2x.png in Resources */,
-				A29919882280364C00469729 /* MOON_AT_item_0_7@2x.png in Resources */,
-				A29919892280364C00469729 /* MOON_AT_item_0_3@2x.png in Resources */,
-				A299198A2280364C00469729 /* MOON_AT_item_0_17@2x.png in Resources */,
-				A299198B2280364C00469729 /* MOON_AT_item_0_1@2x.png in Resources */,
-				A299198C2280364C00469729 /* MOON_AT_item_0_15@2x.png in Resources */,
-				A299198D2280364C00469729 /* MOON_AT_item_0_19@2x.png in Resources */,
-				A299198E2280364C00469729 /* MOON_AT_item_1_4@2x.png in Resources */,
-				A299198F2280364C00469729 /* MOON_AT_item_1_8@2x.png in Resources */,
-				A29919902280364C00469729 /* MOON_AT_item_1_16@2x.png in Resources */,
-				A29919912280364C00469729 /* MOON_AT_item_1_18@2x.png in Resources */,
-				A29919922280364C00469729 /* MOON_AT_item_1_14@2x.png in Resources */,
-				A29919932280364C00469729 /* MOON_AT_item_1_6@2x.png in Resources */,
-				A29919942280364C00469729 /* MOON_AT_item_1_10@2x.png in Resources */,
-				A29919952280364C00469729 /* MOON_AT_item_1_2@2x.png in Resources */,
-				A29919962280364C00469729 /* MOON_AT_item_1_0@2x.png in Resources */,
-				A29919972280364C00469729 /* MOON_AT_item_1_12@2x.png in Resources */,
-				A29919982280364C00469729 /* MOON_AT_item_1_17@2x.png in Resources */,
-				A29919992280364C00469729 /* MOON_AT_item_1_5@2x.png in Resources */,
-				A299199A2280364C00469729 /* MOON_AT_item_1_9@2x.png in Resources */,
-				A299199B2280364C00469729 /* MOON_AT_item_1_7@2x.png in Resources */,
-				A299199C2280364C00469729 /* MOON_AT_item_1_19@2x.png in Resources */,
-				A299199D2280364C00469729 /* MOON_AT_item_1_15@2x.png in Resources */,
-				A299199E2280364C00469729 /* MOON_AT_item_1_3@2x.png in Resources */,
-				A299199F2280364C00469729 /* MOON_AT_item_1_11@2x.png in Resources */,
-				A29919A02280364C00469729 /* MOON_AT_item_1_13@2x.png in Resources */,
-				A29919A12280364C00469729 /* MOON_AT_item_1_1@2x.png in Resources */,
-				A29919A22280364C00469729 /* moonShadow.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A24EE1E322801C790029D09F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A29919A62280372D00469729 /* MOONAssistiveTouchResource.bundle in Resources */,
+				A22910BB228524CF009725C3 /* MOONAssistiveTouchResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A247222F228031D600084BFE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A24EE1E122801C790029D09F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,40 +347,6 @@
 			};
 			name = Release;
 		};
-		A2472237228031D600084BFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = NO;
-				INFOPLIST_FILE = MOONAssistiveTouchResource/Info.plist;
-				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moonShadow.MOONAssistiveTouchResource;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		A2472238228031D600084BFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = NO;
-				INFOPLIST_FILE = MOONAssistiveTouchResource/Info.plist;
-				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moonShadow.MOONAssistiveTouchResource;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		A24EE1FD22801C790029D09F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -628,7 +360,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/AssistiveTouch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,7 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moonShadow.MOONAssistiveTouch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -659,7 +391,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/AssistiveTouch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moonShadow.MOONAssistiveTouch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -684,15 +416,6 @@
 			buildConfigurations = (
 				88B959C3227C6C6300E2BEC8 /* Debug */,
 				88B959C4227C6C6300E2BEC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2472236228031D600084BFE /* Build configuration list for PBXNativeTarget "MOONAssistiveTouchResource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A2472237228031D600084BFE /* Debug */,
-				A2472238228031D600084BFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
