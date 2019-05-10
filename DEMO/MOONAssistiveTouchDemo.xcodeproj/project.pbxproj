@@ -11,9 +11,20 @@
 		A22910A822851CB6009725C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22910A722851CB6009725C3 /* Assets.xcassets */; };
 		A22910AE22851CB6009725C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22910AD22851CB6009725C3 /* main.m */; };
 		A22910B622851F56009725C3 /* MOONATDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A22910B522851F56009725C3 /* MOONATDemoViewController.m */; };
+		A29A8E7122858D3400076317 /* UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A29A8E7022858D3400076317 /* UITests.m */; };
 		A2FA9018228526440078AB80 /* MOONAssistiveTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */; };
 		A2FA9019228526440078AB80 /* MOONAssistiveTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A29A8E7322858D3400076317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A229109322851CB6009725C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A229109A22851CB6009725C3;
+			remoteInfo = MOONAssistiveTouchDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A2FA901A228526440078AB80 /* Embed Frameworks */ = {
@@ -39,6 +50,9 @@
 		A22910B422851F56009725C3 /* MOONATDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOONATDemoViewController.h; sourceTree = "<group>"; };
 		A22910B522851F56009725C3 /* MOONATDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOONATDemoViewController.m; sourceTree = "<group>"; };
 		A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MOONAssistiveTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29A8E6E22858D3400076317 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29A8E7022858D3400076317 /* UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITests.m; sourceTree = "<group>"; };
+		A29A8E7222858D3400076317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A29A8E6B22858D3400076317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				A229109D22851CB6009725C3 /* MOONAssistiveTouchDemo */,
+				A29A8E6F22858D3400076317 /* UITests */,
 				A229109C22851CB6009725C3 /* Products */,
 				A22910B7228520B5009725C3 /* Frameworks */,
 			);
@@ -66,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A229109B22851CB6009725C3 /* MOONAssistiveTouchDemo.app */,
+				A29A8E6E22858D3400076317 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +115,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A29A8E6F22858D3400076317 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A29A8E7022858D3400076317 /* UITests.m */,
+				A29A8E7222858D3400076317 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +145,24 @@
 			productReference = A229109B22851CB6009725C3 /* MOONAssistiveTouchDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A29A8E6D22858D3400076317 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29A8E7722858D3400076317 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				A29A8E6A22858D3400076317 /* Sources */,
+				A29A8E6B22858D3400076317 /* Frameworks */,
+				A29A8E6C22858D3400076317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A29A8E7422858D3400076317 /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = A29A8E6E22858D3400076317 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +174,10 @@
 				TargetAttributes = {
 					A229109A22851CB6009725C3 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					A29A8E6D22858D3400076317 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A229109A22851CB6009725C3;
 					};
 				};
 			};
@@ -141,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				A229109A22851CB6009725C3 /* MOONAssistiveTouchDemo */,
+				A29A8E6D22858D3400076317 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22910A822851CB6009725C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29A8E6C22858D3400076317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +229,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A29A8E6A22858D3400076317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29A8E7122858D3400076317 /* UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A29A8E7422858D3400076317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A229109A22851CB6009725C3 /* MOONAssistiveTouchDemo */;
+			targetProxy = A29A8E7322858D3400076317 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A22910AF22851CB6009725C3 /* Debug */ = {
@@ -320,6 +398,42 @@
 			};
 			name = Release;
 		};
+		A29A8E7522858D3400076317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J25KWTFJ2;
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOONAssistiveTouchDemo;
+			};
+			name = Debug;
+		};
+		A29A8E7622858D3400076317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J25KWTFJ2;
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOONAssistiveTouchDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +451,15 @@
 			buildConfigurations = (
 				A22910B222851CB6009725C3 /* Debug */,
 				A22910B322851CB6009725C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29A8E7722858D3400076317 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29A8E7522858D3400076317 /* Debug */,
+				A29A8E7622858D3400076317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
