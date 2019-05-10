@@ -1,14 +1,14 @@
 //
 //  AppDelegate.m
-//  MOONATProject
+//  MOONAssistiveTouchDemo
 //
-//  Created by 月之暗面 on 2019/5/3.
+//  Created by 徐一丁 on 2019/5/10.
 //  Copyright © 2019 月之暗面. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "AssistiveTouchDemoViewController.h"
+#import "MOONATDemoViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +16,15 @@
 
 @implementation AppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[AssistiveTouchDemoViewController alloc]init];
+    
+    MOONATDemoViewController *demoVC = [[MOONATDemoViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:demoVC];
+    self.window.rootViewController = nav;
+    
     [self.window makeKeyAndVisible];
 
     return YES;

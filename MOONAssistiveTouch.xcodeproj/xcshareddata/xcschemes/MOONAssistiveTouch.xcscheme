@@ -51,6 +51,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A24EE1E422801C790029D09F"
+            BuildableName = "MOONAssistiveTouch.framework"
+            BlueprintName = "MOONAssistiveTouch"
+            ReferencedContainer = "container:MOONAssistiveTouch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

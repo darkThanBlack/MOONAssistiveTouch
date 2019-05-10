@@ -7,58 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88B9599E227C6C6100E2BEC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B9599D227C6C6100E2BEC8 /* AppDelegate.m */; };
-		88B959A6227C6C6300E2BEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B959A5227C6C6300E2BEC8 /* Assets.xcassets */; };
-		88B959A9227C6C6300E2BEC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B959A7227C6C6300E2BEC8 /* LaunchScreen.storyboard */; };
-		88B959AC227C6C6300E2BEC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959AB227C6C6300E2BEC8 /* main.m */; };
-		88B959DF227C6CAC00E2BEC8 /* MOONATMenuItemAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */; };
-		88B959E0227C6CAC00E2BEC8 /* MOONATCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */; };
-		88B959E1227C6CAC00E2BEC8 /* MOONATSystemMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D7227C6CAC00E2BEC8 /* MOONATSystemMenuView.m */; };
-		88B959E2227C6CAC00E2BEC8 /* MOONATContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D9227C6CAC00E2BEC8 /* MOONATContentView.m */; };
-		88B959E3227C6CAC00E2BEC8 /* MOONATRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DA227C6CAC00E2BEC8 /* MOONATRootViewController.m */; };
-		88B959E4227C6CAC00E2BEC8 /* MOONATWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */; };
-		88B959E7227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959E5227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m */; };
-		88DB13BC227D71F000275B56 /* moonShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BB227D71F000275B56 /* moonShadow.png */; };
-		88DB13E7227D72D500275B56 /* MOON_AT_item_0_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BE227D72D500275B56 /* MOON_AT_item_0_4@2x.png */; };
-		88DB13E8227D72D500275B56 /* MOON_AT_item_0_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BF227D72D500275B56 /* MOON_AT_item_0_8@2x.png */; };
-		88DB13E9227D72D500275B56 /* MOON_AT_item_0_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C0227D72D500275B56 /* MOON_AT_item_0_10@2x.png */; };
-		88DB13EA227D72D500275B56 /* MOON_AT_item_0_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C1227D72D500275B56 /* MOON_AT_item_0_6@2x.png */; };
-		88DB13EB227D72D500275B56 /* MOON_AT_item_0_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C2227D72D500275B56 /* MOON_AT_item_0_12@2x.png */; };
-		88DB13EC227D72D500275B56 /* MOON_AT_item_0_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C3227D72D500275B56 /* MOON_AT_item_0_16@2x.png */; };
-		88DB13ED227D72D500275B56 /* MOON_AT_item_0_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C4227D72D500275B56 /* MOON_AT_item_0_2@2x.png */; };
-		88DB13EE227D72D500275B56 /* MOON_AT_item_0_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C5227D72D500275B56 /* MOON_AT_item_0_14@2x.png */; };
-		88DB13EF227D72D500275B56 /* MOON_AT_item_0_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C6227D72D500275B56 /* MOON_AT_item_0_18@2x.png */; };
-		88DB13F0227D72D500275B56 /* MOON_AT_item_0_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C7227D72D500275B56 /* MOON_AT_item_0_0@2x.png */; };
-		88DB13F1227D72D500275B56 /* MOON_AT_item_0_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C8227D72D500275B56 /* MOON_AT_item_0_11@2x.png */; };
-		88DB13F2227D72D500275B56 /* MOON_AT_item_0_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C9227D72D500275B56 /* MOON_AT_item_0_5@2x.png */; };
-		88DB13F3227D72D500275B56 /* MOON_AT_item_0_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CA227D72D500275B56 /* MOON_AT_item_0_9@2x.png */; };
-		88DB13F4227D72D500275B56 /* MOON_AT_item_0_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CB227D72D500275B56 /* MOON_AT_item_0_13@2x.png */; };
-		88DB13F5227D72D500275B56 /* MOON_AT_item_0_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CC227D72D500275B56 /* MOON_AT_item_0_7@2x.png */; };
-		88DB13F6227D72D500275B56 /* MOON_AT_item_0_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CD227D72D500275B56 /* MOON_AT_item_0_3@2x.png */; };
-		88DB13F7227D72D500275B56 /* MOON_AT_item_0_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CE227D72D500275B56 /* MOON_AT_item_0_17@2x.png */; };
-		88DB13F8227D72D500275B56 /* MOON_AT_item_0_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13CF227D72D500275B56 /* MOON_AT_item_0_1@2x.png */; };
-		88DB13F9227D72D500275B56 /* MOON_AT_item_0_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D0227D72D500275B56 /* MOON_AT_item_0_15@2x.png */; };
-		88DB13FA227D72D500275B56 /* MOON_AT_item_0_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D1227D72D500275B56 /* MOON_AT_item_0_19@2x.png */; };
-		88DB13FB227D72D500275B56 /* MOON_AT_item_1_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D3227D72D500275B56 /* MOON_AT_item_1_4@2x.png */; };
-		88DB13FC227D72D500275B56 /* MOON_AT_item_1_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D4227D72D500275B56 /* MOON_AT_item_1_8@2x.png */; };
-		88DB13FD227D72D500275B56 /* MOON_AT_item_1_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D5227D72D500275B56 /* MOON_AT_item_1_16@2x.png */; };
-		88DB13FE227D72D500275B56 /* MOON_AT_item_1_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D6227D72D500275B56 /* MOON_AT_item_1_18@2x.png */; };
-		88DB13FF227D72D500275B56 /* MOON_AT_item_1_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D7227D72D500275B56 /* MOON_AT_item_1_14@2x.png */; };
-		88DB1400227D72D500275B56 /* MOON_AT_item_1_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D8227D72D500275B56 /* MOON_AT_item_1_6@2x.png */; };
-		88DB1401227D72D500275B56 /* MOON_AT_item_1_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13D9227D72D500275B56 /* MOON_AT_item_1_10@2x.png */; };
-		88DB1402227D72D500275B56 /* MOON_AT_item_1_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DA227D72D500275B56 /* MOON_AT_item_1_2@2x.png */; };
-		88DB1403227D72D500275B56 /* MOON_AT_item_1_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DB227D72D500275B56 /* MOON_AT_item_1_0@2x.png */; };
-		88DB1404227D72D500275B56 /* MOON_AT_item_1_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DC227D72D500275B56 /* MOON_AT_item_1_12@2x.png */; };
-		88DB1405227D72D500275B56 /* MOON_AT_item_1_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DD227D72D500275B56 /* MOON_AT_item_1_17@2x.png */; };
-		88DB1406227D72D500275B56 /* MOON_AT_item_1_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DE227D72D500275B56 /* MOON_AT_item_1_5@2x.png */; };
-		88DB1407227D72D500275B56 /* MOON_AT_item_1_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13DF227D72D500275B56 /* MOON_AT_item_1_9@2x.png */; };
-		88DB1408227D72D500275B56 /* MOON_AT_item_1_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E0227D72D500275B56 /* MOON_AT_item_1_7@2x.png */; };
-		88DB1409227D72D500275B56 /* MOON_AT_item_1_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E1227D72D500275B56 /* MOON_AT_item_1_19@2x.png */; };
-		88DB140A227D72D500275B56 /* MOON_AT_item_1_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E2227D72D500275B56 /* MOON_AT_item_1_15@2x.png */; };
-		88DB140B227D72D500275B56 /* MOON_AT_item_1_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E3227D72D500275B56 /* MOON_AT_item_1_3@2x.png */; };
-		88DB140C227D72D500275B56 /* MOON_AT_item_1_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E4227D72D500275B56 /* MOON_AT_item_1_11@2x.png */; };
-		88DB140D227D72D500275B56 /* MOON_AT_item_1_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */; };
-		88DB140E227D72D500275B56 /* MOON_AT_item_1_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */; };
 		A24721F1228026B300084BFE /* MOONATCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D3227C6CAC00E2BEC8 /* MOONATCore.m */; };
 		A24721F2228026B300084BFE /* MOONATMenuItemAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */; };
 		A24721F3228026B300084BFE /* MOONATMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A252F5A6227FDBED00A36207 /* MOONATMenuHelper.m */; };
@@ -66,11 +14,8 @@
 		A24721F5228026B300084BFE /* MOONATContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959D9227C6CAC00E2BEC8 /* MOONATContentView.m */; };
 		A24721F6228026B300084BFE /* MOONATRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DA227C6CAC00E2BEC8 /* MOONATRootViewController.m */; };
 		A24721F7228026B300084BFE /* MOONATWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B959DB227C6CAC00E2BEC8 /* MOONATWindow.m */; };
-		A24EE1FA22801C790029D09F /* MOONAssistiveTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24EE1E522801C790029D09F /* MOONAssistiveTouch.framework */; };
-		A24EE1FB22801C790029D09F /* MOONAssistiveTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A24EE1E522801C790029D09F /* MOONAssistiveTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A24EE20522801D1D0029D09F /* MOONATCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B959D0227C6CAC00E2BEC8 /* MOONATCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24EE20722801D1D0029D09F /* MOONATMenuItemAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B959D2227C6CAC00E2BEC8 /* MOONATMenuItemAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A252F5A7227FDBED00A36207 /* MOONATMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A252F5A6227FDBED00A36207 /* MOONATMenuHelper.m */; };
 		A299197A2280364C00469729 /* MOON_AT_item_0_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BE227D72D500275B56 /* MOON_AT_item_0_4@2x.png */; };
 		A299197B2280364C00469729 /* MOON_AT_item_0_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BF227D72D500275B56 /* MOON_AT_item_0_8@2x.png */; };
 		A299197C2280364C00469729 /* MOON_AT_item_0_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13C0227D72D500275B56 /* MOON_AT_item_0_10@2x.png */; };
@@ -112,42 +57,10 @@
 		A29919A02280364C00469729 /* MOON_AT_item_1_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E5227D72D500275B56 /* MOON_AT_item_1_13@2x.png */; };
 		A29919A12280364C00469729 /* MOON_AT_item_1_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13E6227D72D500275B56 /* MOON_AT_item_1_1@2x.png */; };
 		A29919A22280364C00469729 /* moonShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB13BB227D71F000275B56 /* moonShadow.png */; };
-		A29919A52280371400469729 /* MOONAssistiveTouchResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A29919A42280371400469729 /* MOONAssistiveTouchResource.bundle */; };
 		A29919A62280372D00469729 /* MOONAssistiveTouchResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A29919A42280371400469729 /* MOONAssistiveTouchResource.bundle */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A24EE1F822801C790029D09F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88B95991227C6C6100E2BEC8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A24EE1E422801C790029D09F;
-			remoteInfo = MOONAssistiveTouch;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A24EE1FF22801C790029D09F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A24EE1FB22801C790029D09F /* MOONAssistiveTouch.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		88B95999227C6C6100E2BEC8 /* MOONATDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOONATDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88B9599C227C6C6100E2BEC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		88B9599D227C6C6100E2BEC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88B959A5227C6C6300E2BEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		88B959A8227C6C6300E2BEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		88B959AA227C6C6300E2BEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88B959AB227C6C6300E2BEC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88B959D0227C6CAC00E2BEC8 /* MOONATCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATCore.h; sourceTree = "<group>"; };
 		88B959D1227C6CAC00E2BEC8 /* MOONATMenuItemAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOONATMenuItemAction.m; sourceTree = "<group>"; };
 		88B959D2227C6CAC00E2BEC8 /* MOONATMenuItemAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATMenuItemAction.h; sourceTree = "<group>"; };
@@ -160,8 +73,6 @@
 		88B959DC227C6CAC00E2BEC8 /* MOONATContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATContentView.h; sourceTree = "<group>"; };
 		88B959DD227C6CAC00E2BEC8 /* MOONATWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATWindow.h; sourceTree = "<group>"; };
 		88B959DE227C6CAC00E2BEC8 /* MOONATRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOONATRootViewController.h; sourceTree = "<group>"; };
-		88B959E5227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistiveTouchDemoViewController.m; sourceTree = "<group>"; };
-		88B959E6227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistiveTouchDemoViewController.h; sourceTree = "<group>"; };
 		88DB13BB227D71F000275B56 /* moonShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moonShadow.png; sourceTree = "<group>"; };
 		88DB13BE227D72D500275B56 /* MOON_AT_item_0_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_4@2x.png"; sourceTree = "<group>"; };
 		88DB13BF227D72D500275B56 /* MOON_AT_item_0_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOON_AT_item_0_8@2x.png"; sourceTree = "<group>"; };
@@ -215,14 +126,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88B95996227C6C6100E2BEC8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A24EE1FA22801C790029D09F /* MOONAssistiveTouch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A2472230228031D600084BFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,8 +148,6 @@
 			children = (
 				88B959E8227C712B00E2BEC8 /* Resource */,
 				88B959CE227C6CAC00E2BEC8 /* AssistiveTouch */,
-				88B9599B227C6C6100E2BEC8 /* DEMO */,
-				A24EE1E622801C790029D09F /* MOONAssistiveTouch */,
 				A2472234228031D600084BFE /* MOONAssistiveTouchResource */,
 				88B9599A227C6C6100E2BEC8 /* Products */,
 				A24722262280293700084BFE /* Frameworks */,
@@ -256,31 +157,16 @@
 		88B9599A227C6C6100E2BEC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88B95999227C6C6100E2BEC8 /* MOONATDemo.app */,
 				A24EE1E522801C790029D09F /* MOONAssistiveTouch.framework */,
 				A2472233228031D600084BFE /* MOONAssistiveTouchResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88B9599B227C6C6100E2BEC8 /* DEMO */ = {
-			isa = PBXGroup;
-			children = (
-				88B9599C227C6C6100E2BEC8 /* AppDelegate.h */,
-				88B9599D227C6C6100E2BEC8 /* AppDelegate.m */,
-				88B959E6227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.h */,
-				88B959E5227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m */,
-				88B959A7227C6C6300E2BEC8 /* LaunchScreen.storyboard */,
-				88B959AA227C6C6300E2BEC8 /* Info.plist */,
-				88B959AB227C6C6300E2BEC8 /* main.m */,
-				88B959A5227C6C6300E2BEC8 /* Assets.xcassets */,
-			);
-			path = DEMO;
-			sourceTree = "<group>";
-		};
 		88B959CE227C6CAC00E2BEC8 /* AssistiveTouch */ = {
 			isa = PBXGroup;
 			children = (
+				A24EE1E822801C790029D09F /* Info.plist */,
 				88B959CF227C6CAC00E2BEC8 /* Core */,
 				88B959D4227C6CAC00E2BEC8 /* Menu */,
 				88B959D8227C6CAC00E2BEC8 /* ATView */,
@@ -413,14 +299,6 @@
 			path = MOONAssistiveTouchResource;
 			sourceTree = "<group>";
 		};
-		A24EE1E622801C790029D09F /* MOONAssistiveTouch */ = {
-			isa = PBXGroup;
-			children = (
-				A24EE1E822801C790029D09F /* Info.plist */,
-			);
-			path = MOONAssistiveTouch;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -436,25 +314,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		88B95998227C6C6100E2BEC8 /* MOONATDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88B959C5227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATDemo" */;
-			buildPhases = (
-				88B95995227C6C6100E2BEC8 /* Sources */,
-				88B95996227C6C6100E2BEC8 /* Frameworks */,
-				88B95997227C6C6100E2BEC8 /* Resources */,
-				A24EE1FF22801C790029D09F /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A24EE1F922801C790029D09F /* PBXTargetDependency */,
-			);
-			name = MOONATDemo;
-			productName = MOONATProject;
-			productReference = 88B95999227C6C6100E2BEC8 /* MOONATDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 		A2472232228031D600084BFE /* MOONAssistiveTouchResource */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2472236228031D600084BFE /* Build configuration list for PBXNativeTarget "MOONAssistiveTouchResource" */;
@@ -499,9 +358,6 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "月之暗面";
 				TargetAttributes = {
-					88B95998227C6C6100E2BEC8 = {
-						CreatedOnToolsVersion = 10.2;
-					};
 					A2472232228031D600084BFE = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -523,7 +379,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88B95998227C6C6100E2BEC8 /* MOONATDemo */,
 				A24EE1E422801C790029D09F /* MOONAssistiveTouch */,
 				A2472232228031D600084BFE /* MOONAssistiveTouchResource */,
 			);
@@ -531,57 +386,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88B95997227C6C6100E2BEC8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88DB13F1227D72D500275B56 /* MOON_AT_item_0_11@2x.png in Resources */,
-				88DB1404227D72D500275B56 /* MOON_AT_item_1_12@2x.png in Resources */,
-				88DB13F0227D72D500275B56 /* MOON_AT_item_0_0@2x.png in Resources */,
-				88DB1400227D72D500275B56 /* MOON_AT_item_1_6@2x.png in Resources */,
-				A29919A52280371400469729 /* MOONAssistiveTouchResource.bundle in Resources */,
-				88DB13FC227D72D500275B56 /* MOON_AT_item_1_8@2x.png in Resources */,
-				88DB13FB227D72D500275B56 /* MOON_AT_item_1_4@2x.png in Resources */,
-				88DB13F5227D72D500275B56 /* MOON_AT_item_0_7@2x.png in Resources */,
-				88DB1407227D72D500275B56 /* MOON_AT_item_1_9@2x.png in Resources */,
-				88DB1401227D72D500275B56 /* MOON_AT_item_1_10@2x.png in Resources */,
-				88DB13F4227D72D500275B56 /* MOON_AT_item_0_13@2x.png in Resources */,
-				88B959A9227C6C6300E2BEC8 /* LaunchScreen.storyboard in Resources */,
-				88DB13F8227D72D500275B56 /* MOON_AT_item_0_1@2x.png in Resources */,
-				88DB13EB227D72D500275B56 /* MOON_AT_item_0_12@2x.png in Resources */,
-				88DB13EE227D72D500275B56 /* MOON_AT_item_0_14@2x.png in Resources */,
-				88DB13EC227D72D500275B56 /* MOON_AT_item_0_16@2x.png in Resources */,
-				88DB13F3227D72D500275B56 /* MOON_AT_item_0_9@2x.png in Resources */,
-				88DB1405227D72D500275B56 /* MOON_AT_item_1_17@2x.png in Resources */,
-				88DB140B227D72D500275B56 /* MOON_AT_item_1_3@2x.png in Resources */,
-				88DB1403227D72D500275B56 /* MOON_AT_item_1_0@2x.png in Resources */,
-				88DB1408227D72D500275B56 /* MOON_AT_item_1_7@2x.png in Resources */,
-				88DB13FF227D72D500275B56 /* MOON_AT_item_1_14@2x.png in Resources */,
-				88DB1402227D72D500275B56 /* MOON_AT_item_1_2@2x.png in Resources */,
-				88DB13E7227D72D500275B56 /* MOON_AT_item_0_4@2x.png in Resources */,
-				88DB1406227D72D500275B56 /* MOON_AT_item_1_5@2x.png in Resources */,
-				88DB13F7227D72D500275B56 /* MOON_AT_item_0_17@2x.png in Resources */,
-				88B959A6227C6C6300E2BEC8 /* Assets.xcassets in Resources */,
-				88DB140C227D72D500275B56 /* MOON_AT_item_1_11@2x.png in Resources */,
-				88DB140D227D72D500275B56 /* MOON_AT_item_1_13@2x.png in Resources */,
-				88DB140A227D72D500275B56 /* MOON_AT_item_1_15@2x.png in Resources */,
-				88DB13ED227D72D500275B56 /* MOON_AT_item_0_2@2x.png in Resources */,
-				88DB13BC227D71F000275B56 /* moonShadow.png in Resources */,
-				88DB1409227D72D500275B56 /* MOON_AT_item_1_19@2x.png in Resources */,
-				88DB13EA227D72D500275B56 /* MOON_AT_item_0_6@2x.png in Resources */,
-				88DB13FD227D72D500275B56 /* MOON_AT_item_1_16@2x.png in Resources */,
-				88DB13F6227D72D500275B56 /* MOON_AT_item_0_3@2x.png in Resources */,
-				88DB13E8227D72D500275B56 /* MOON_AT_item_0_8@2x.png in Resources */,
-				88DB13F9227D72D500275B56 /* MOON_AT_item_0_15@2x.png in Resources */,
-				88DB13F2227D72D500275B56 /* MOON_AT_item_0_5@2x.png in Resources */,
-				88DB13E9227D72D500275B56 /* MOON_AT_item_0_10@2x.png in Resources */,
-				88DB13FE227D72D500275B56 /* MOON_AT_item_1_18@2x.png in Resources */,
-				88DB13FA227D72D500275B56 /* MOON_AT_item_0_19@2x.png in Resources */,
-				88DB13EF227D72D500275B56 /* MOON_AT_item_0_18@2x.png in Resources */,
-				88DB140E227D72D500275B56 /* MOON_AT_item_1_1@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A2472231228031D600084BFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -641,23 +445,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88B95995227C6C6100E2BEC8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88B959E3227C6CAC00E2BEC8 /* MOONATRootViewController.m in Sources */,
-				88B959AC227C6C6300E2BEC8 /* main.m in Sources */,
-				88B9599E227C6C6100E2BEC8 /* AppDelegate.m in Sources */,
-				88B959E2227C6CAC00E2BEC8 /* MOONATContentView.m in Sources */,
-				88B959E0227C6CAC00E2BEC8 /* MOONATCore.m in Sources */,
-				88B959E7227C6DC000E2BEC8 /* AssistiveTouchDemoViewController.m in Sources */,
-				88B959DF227C6CAC00E2BEC8 /* MOONATMenuItemAction.m in Sources */,
-				88B959E1227C6CAC00E2BEC8 /* MOONATSystemMenuView.m in Sources */,
-				A252F5A7227FDBED00A36207 /* MOONATMenuHelper.m in Sources */,
-				88B959E4227C6CAC00E2BEC8 /* MOONATWindow.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A247222F228031D600084BFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -680,25 +467,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A24EE1F922801C790029D09F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A24EE1E422801C790029D09F /* MOONAssistiveTouch */;
-			targetProxy = A24EE1F822801C790029D09F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		88B959A7227C6C6300E2BEC8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88B959A8227C6C6300E2BEC8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		88B959C3227C6C6300E2BEC8 /* Debug */ = {
@@ -813,46 +581,6 @@
 			};
 			name = Release;
 		};
-		88B959C6227C6C6300E2BEC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J25KWTFJ2;
-				INFOPLIST_FILE = "$(SRCROOT)/DEMO/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONAssistiveTouch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		88B959C7227C6C6300E2BEC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J25KWTFJ2;
-				INFOPLIST_FILE = "$(SRCROOT)/DEMO/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONAssistiveTouch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 		A2472237228031D600084BFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -898,7 +626,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MOONAssistiveTouch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AssistiveTouch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -929,7 +657,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MOONAssistiveTouch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AssistiveTouch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -956,15 +684,6 @@
 			buildConfigurations = (
 				88B959C3227C6C6300E2BEC8 /* Debug */,
 				88B959C4227C6C6300E2BEC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88B959C5227C6C6300E2BEC8 /* Build configuration list for PBXNativeTarget "MOONATDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88B959C6227C6C6300E2BEC8 /* Debug */,
-				88B959C7227C6C6300E2BEC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  MOONATProject
+//  MOONAssistiveTouchDemo
 //
-//  Created by 月之暗面 on 2019/5/3.
+//  Created by 徐一丁 on 2019/5/10.
 //  Copyright © 2019 月之暗面. All rights reserved.
 //
 
