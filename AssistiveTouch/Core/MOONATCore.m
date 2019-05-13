@@ -50,6 +50,7 @@ static MOONATCore *core_ = nil;
         _window = [[MOONATWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
         _window.backgroundColor = [UIColor clearColor];
         _window.windowLevel = CGFLOAT_MAX;
+        _window.accessibilityIdentifier = @"MOONAT_window";
         
         UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.rootVC];
         _window.rootViewController = nav;

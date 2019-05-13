@@ -8,6 +8,37 @@
 
 #import "MOONATContentView.h"
 
+NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
+
+@implementation MOONATContentConfig
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeCGRect:self.closeFrame forKey:@"closeFrame"];
+    [aCoder encodeCGRect:self.openFrame forKey:@"openFrame"];
+    [aCoder encodeInteger:self.absorbMode forKey:@"absorbMode"];
+    [aCoder encodeBool:self.delayFadeMode forKey:@"delayFadeMode"];
+    [aCoder encodeFloat:self.fadeAlpha forKey:@"fadeAlpha"];
+    [aCoder encodeInteger:self.fadeDelay forKey:@"fadeDelay"];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        self.closeFrame = [aDecoder decodeCGRectForKey:@"closeFrame"];
+        self.openFrame = [aDecoder decodeCGRectForKey:@"openFrame"];
+        self.absorbMode = [aDecoder decodeIntegerForKey:@"absorbMode"];
+        self.delayFadeMode = [aDecoder decodeBoolForKey:@"delayFadeMode"];
+        self.fadeAlpha = [aDecoder decodeFloatForKey:@"fadeAlpha"];
+        self.fadeDelay = [aDecoder decodeIntegerForKey:@"fadeDelay"];
+    }
+    return self;
+}
+
+@end
+
+#pragma mark -
+
 @interface MOONATContentView ()
 
 ///记录拖动起始位置
@@ -27,11 +58,43 @@
 
 @property (nonatomic, assign) CGRect openFrame;
 
+@property (nonatomic, strong) MOONATContentConfig *config;
+
 @end
 
 @implementation MOONATContentView
 
-#pragma mark Interface
+#pragma mark -
+
+- (MOONATContentConfig *)config
+{
+    if (!_config) {
+        NSData *tmpData = [[NSUserDefaults standardUserDefaults]objectForKey:@"kMOONATResumableConfigKey"];
+        MOONATContentConfig *tmp = tmpData?[NSKeyedUnarchiver unarchiveObjectWithData:tmpData]:nil;
+        if (tmp) {
+            _config = tmp;
+        } else {
+            _config = [[MOONATContentConfig alloc]init];
+            
+            _config.closeFrame = CGRectMake(100, 100, 65.0, 65.0);
+            _config.openFrame = CGRectMake(([UIScreen mainScreen].bounds.size.width / 2.0) - 150.0, ([UIScreen mainScreen].bounds.size.height / 2.0) - 150.0, 300.0, 300.0);
+            _config.absorbMode = MOONATAbsorbModeSystem;
+            _config.delayFadeMode = YES;
+            _config.fadeAlpha = 0.3;
+            _config.fadeDelay = 4.0;
+        }
+    }
+    return _config;
+}
+
+- (void)dealloc
+{
+    NSData *tmpData = [NSKeyedArchiver archivedDataWithRootObject:self.config];
+    [[NSUserDefaults standardUserDefaults]setObject:tmpData forKey:@"kMOONATResumableConfigKey"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
+
+#pragma mark - Interface
 
 - (void)start
 {
@@ -39,6 +102,12 @@
     self.open = NO;
     self.closeBlock(self);
     [self layoutIfNeeded];
+}
+
+- (void)startWithResumableConfig
+{
+    
+    
 }
 
 - (void)configFrameWithOpenState:(CGRect)openFrame closeState:(CGRect)closeFrame
@@ -143,6 +212,8 @@
         [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.frame = newFrame;
         } completion:^(BOOL finished) {
+            [[NSUserDefaults standardUserDefaults]setObject:NSStringFromCGPoint(self.center) forKey:kMOONATContentViewOldCenter];
+            [[NSUserDefaults standardUserDefaults]synchronize];
             if (self.delayFade) {
                 self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(contentDelayFadeHandle:) userInfo:nil repeats:YES];
             }
@@ -150,7 +221,7 @@
     }
 }
 
-#pragma mark Handle
+#pragma mark - Handle
 
 - (void)contentDelayFadeHandle:(NSTimer *)timer
 {
@@ -165,7 +236,7 @@
     }
 }
 
-#pragma mark - Frame
+#pragma mark - Frame Helper
 
 ///超出区域拉回
 - (CGRect)frameHelperInside:(CGRect)userFrame barrierFrame:(CGRect)barrierFrame

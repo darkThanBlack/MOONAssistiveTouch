@@ -16,7 +16,32 @@ typedef NS_ENUM(NSUInteger, MOONATAbsorbMode) {
     MOONATAbsorbModeEdge  //仅靠近边缘时吸附
 };
 
+///上次关闭APP时中心点位置
+extern NSString * const kMOONATContentViewOldCenter;
+
 @class MOONATContentView;
+
+@interface MOONATContentConfig : NSObject<NSCoding>
+
+///关闭状态
+@property (nonatomic, assign) CGRect closeFrame;
+
+///打开状态
+@property (nonatomic, assign) CGRect openFrame;
+
+///吸附模式
+@property (nonatomic, assign) MOONATAbsorbMode absorbMode;
+
+///延时变淡模式
+@property (nonatomic, assign) BOOL delayFadeMode;
+
+///变淡透明值
+@property (nonatomic, assign) CGFloat fadeAlpha;
+
+///变淡延时
+@property (nonatomic, assign) NSInteger fadeDelay;
+
+@end
 
 typedef NSArray<UIView *> *_Nullable(^MOONATConfigSubViewsBlock)(MOONATContentView *contentView);
 typedef void(^MOONATConfigSubViewCloseStateBlock)(MOONATContentView *contentView);
@@ -30,6 +55,7 @@ typedef void(^MOONATConfigSubViewOpenStateBlock)(MOONATContentView *contentView)
 
 ///延时变淡模式
 @property (nonatomic, assign) BOOL delayFade;
+
 
 ///干！
 - (void)start;

@@ -11,13 +11,13 @@
 		A22910A822851CB6009725C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22910A722851CB6009725C3 /* Assets.xcassets */; };
 		A22910AE22851CB6009725C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22910AD22851CB6009725C3 /* main.m */; };
 		A22910B622851F56009725C3 /* MOONATDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A22910B522851F56009725C3 /* MOONATDemoViewController.m */; };
-		A29A8E7122858D3400076317 /* UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A29A8E7022858D3400076317 /* UITests.m */; };
+		A29A8E7F228917F700076317 /* MOONATUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A8E7E228917F700076317 /* MOONATUITests.swift */; };
 		A2FA9018228526440078AB80 /* MOONAssistiveTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */; };
 		A2FA9019228526440078AB80 /* MOONAssistiveTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A29A8E7322858D3400076317 /* PBXContainerItemProxy */ = {
+		A29A8E81228917F700076317 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A229109322851CB6009725C3 /* Project object */;
 			proxyType = 1;
@@ -50,9 +50,9 @@
 		A22910B422851F56009725C3 /* MOONATDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOONATDemoViewController.h; sourceTree = "<group>"; };
 		A22910B522851F56009725C3 /* MOONATDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOONATDemoViewController.m; sourceTree = "<group>"; };
 		A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MOONAssistiveTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29A8E6E22858D3400076317 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29A8E7022858D3400076317 /* UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITests.m; sourceTree = "<group>"; };
-		A29A8E7222858D3400076317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29A8E7C228917F700076317 /* MOONATUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOONATUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29A8E7E228917F700076317 /* MOONATUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOONATUITests.swift; sourceTree = "<group>"; };
+		A29A8E80228917F700076317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29A8E6B22858D3400076317 /* Frameworks */ = {
+		A29A8E79228917F700076317 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				A229109D22851CB6009725C3 /* MOONAssistiveTouchDemo */,
-				A29A8E6F22858D3400076317 /* UITests */,
+				A29A8E7D228917F700076317 /* MOONATUITests */,
 				A229109C22851CB6009725C3 /* Products */,
 				A22910B7228520B5009725C3 /* Frameworks */,
 			);
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A229109B22851CB6009725C3 /* MOONAssistiveTouchDemo.app */,
-				A29A8E6E22858D3400076317 /* UITests.xctest */,
+				A29A8E7C228917F700076317 /* MOONATUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,13 +115,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A29A8E6F22858D3400076317 /* UITests */ = {
+		A29A8E7D228917F700076317 /* MOONATUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A29A8E7022858D3400076317 /* UITests.m */,
-				A29A8E7222858D3400076317 /* Info.plist */,
+				A29A8E7E228917F700076317 /* MOONATUITests.swift */,
+				A29A8E80228917F700076317 /* Info.plist */,
 			);
-			path = UITests;
+			path = MOONATUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,22 +145,22 @@
 			productReference = A229109B22851CB6009725C3 /* MOONAssistiveTouchDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A29A8E6D22858D3400076317 /* UITests */ = {
+		A29A8E7B228917F700076317 /* MOONATUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A29A8E7722858D3400076317 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildConfigurationList = A29A8E83228917F700076317 /* Build configuration list for PBXNativeTarget "MOONATUITests" */;
 			buildPhases = (
-				A29A8E6A22858D3400076317 /* Sources */,
-				A29A8E6B22858D3400076317 /* Frameworks */,
-				A29A8E6C22858D3400076317 /* Resources */,
+				A29A8E78228917F700076317 /* Sources */,
+				A29A8E79228917F700076317 /* Frameworks */,
+				A29A8E7A228917F700076317 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A29A8E7422858D3400076317 /* PBXTargetDependency */,
+				A29A8E82228917F700076317 /* PBXTargetDependency */,
 			);
-			name = UITests;
-			productName = UITests;
-			productReference = A29A8E6E22858D3400076317 /* UITests.xctest */;
+			name = MOONATUITests;
+			productName = MOONATUITests;
+			productReference = A29A8E7C228917F700076317 /* MOONATUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -169,14 +169,16 @@
 		A229109322851CB6009725C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "月之暗面";
 				TargetAttributes = {
 					A229109A22851CB6009725C3 = {
 						CreatedOnToolsVersion = 10.2;
 					};
-					A29A8E6D22858D3400076317 = {
+					A29A8E7B228917F700076317 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 						TestTargetID = A229109A22851CB6009725C3;
 					};
 				};
@@ -195,7 +197,7 @@
 			projectRoot = "";
 			targets = (
 				A229109A22851CB6009725C3 /* MOONAssistiveTouchDemo */,
-				A29A8E6D22858D3400076317 /* UITests */,
+				A29A8E7B228917F700076317 /* MOONATUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,7 +211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29A8E6C22858D3400076317 /* Resources */ = {
+		A29A8E7A228917F700076317 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,21 +231,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29A8E6A22858D3400076317 /* Sources */ = {
+		A29A8E78228917F700076317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A29A8E7122858D3400076317 /* UITests.m in Sources */,
+				A29A8E7F228917F700076317 /* MOONATUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A29A8E7422858D3400076317 /* PBXTargetDependency */ = {
+		A29A8E82228917F700076317 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A229109A22851CB6009725C3 /* MOONAssistiveTouchDemo */;
-			targetProxy = A29A8E7322858D3400076317 /* PBXContainerItemProxy */;
+			targetProxy = A29A8E81228917F700076317 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,37 +400,47 @@
 			};
 			name = Release;
 		};
-		A29A8E7522858D3400076317 /* Debug */ = {
+		A29A8E84228917F700076317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J25KWTFJ2;
-				INFOPLIST_FILE = UITests/Info.plist;
+				INFOPLIST_FILE = MOONATUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONATUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MOONAssistiveTouchDemo;
 			};
 			name = Debug;
 		};
-		A29A8E7622858D3400076317 /* Release */ = {
+		A29A8E85228917F700076317 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J25KWTFJ2;
-				INFOPLIST_FILE = UITests/Info.plist;
+				INFOPLIST_FILE = MOONATUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = moonShadow.MOONATUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MOONAssistiveTouchDemo;
 			};
@@ -455,11 +467,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A29A8E7722858D3400076317 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+		A29A8E83228917F700076317 /* Build configuration list for PBXNativeTarget "MOONATUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A29A8E7522858D3400076317 /* Debug */,
-				A29A8E7622858D3400076317 /* Release */,
+				A29A8E84228917F700076317 /* Debug */,
+				A29A8E85228917F700076317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

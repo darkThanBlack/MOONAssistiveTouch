@@ -51,6 +51,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     if (!_menuView_0) {
         _menuView_0 = [[MOONATSystemMenuView alloc]init];
         _menuView_0.backgroundColor = [UIColor clearColor];
+        _menuView_0.accessibilityIdentifier = @"MOONAT_rootvc_menuview_0";
     }
     return _menuView_0;
 }
@@ -60,6 +61,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     if (!_menuCloseView) {
         _menuCloseView = [[UIView alloc]init];
         _menuCloseView.backgroundColor = [UIColor clearColor];
+        _menuCloseView.accessibilityIdentifier = @"MOONAT_rootvc_menucloseview";
         
         _menuCloseView.userInteractionEnabled = YES;
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(assistiveTouchedEvent:)];
@@ -75,7 +77,8 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     if (!_contentView) {
         _contentView = [[MOONATContentView alloc]init];
         _contentView.backgroundColor = [UIColor clearColor];
-        
+        _contentView.accessibilityIdentifier = @"MOONAT_rootvc_contentview";
+
         _contentView.userInteractionEnabled = YES;
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(assistiveTouchedEvent:)];
         singleTap.numberOfTapsRequired = 1;
@@ -112,6 +115,8 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 {
     [super viewDidLoad];
     
+    self.view.accessibilityIdentifier = @"MOONAT_rootvc";
+    
     //用于空白区域关闭菜单
     self.menuCloseView.hidden = YES;
     self.menuCloseView.frame = self.view.bounds;
@@ -119,7 +124,14 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     
     //配置菜单容器
     [self.contentView configFrameWithOpenState:CGRectMake((self.view.frame.size.width / 2.0) - 150.0, (self.view.frame.size.height / 2.0) - 150.0, 300.0, 300.0) closeState:CGRectMake(0, 0, 65, 65)];
-    self.contentView.center = self.view.center;
+    NSString *oldOrigin = [[NSUserDefaults standardUserDefaults]objectForKey:kMOONATContentViewOldCenter];
+    if (oldOrigin && oldOrigin.length) {
+        CGPoint oldCenter = CGPointFromString(oldOrigin);
+        oldCenter = CGPointMake(ABS(oldCenter.x), ABS(oldCenter.y));  //粗略地保证在界内
+        self.contentView.center = oldCenter;
+    } else {
+        self.contentView.center = self.view.center;
+    }
     
     self.contentView.absorbMode = MOONATAbsorbModeSystem;
     self.contentView.delayFade = YES;
