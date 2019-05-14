@@ -51,7 +51,8 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     if (!_menuView_0) {
         _menuView_0 = [[MOONATSystemMenuView alloc]init];
         _menuView_0.backgroundColor = [UIColor clearColor];
-        _menuView_0.accessibilityIdentifier = @"MOONAT_rootvc_menuview_0";
+//        _menuView_0.isAccessibilityElement = YES;
+        _menuView_0.accessibilityIdentifier = @"MOONATT_rootvc_menuview_0";
     }
     return _menuView_0;
 }
@@ -61,7 +62,8 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     if (!_menuCloseView) {
         _menuCloseView = [[UIView alloc]init];
         _menuCloseView.backgroundColor = [UIColor clearColor];
-        _menuCloseView.accessibilityIdentifier = @"MOONAT_rootvc_menucloseview";
+//        _menuCloseView.isAccessibilityElement = YES;
+        _menuCloseView.accessibilityIdentifier = @"MOONATT_rootvc_menucloseview";
         
         _menuCloseView.userInteractionEnabled = YES;
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(assistiveTouchedEvent:)];
@@ -77,7 +79,8 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     if (!_contentView) {
         _contentView = [[MOONATContentView alloc]init];
         _contentView.backgroundColor = [UIColor clearColor];
-        _contentView.accessibilityIdentifier = @"MOONAT_rootvc_contentview";
+//        _contentView.isAccessibilityElement = YES;
+        _contentView.accessibilityIdentifier = @"MOONATT_rootvc_contentview";
 
         _contentView.userInteractionEnabled = YES;
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(assistiveTouchedEvent:)];
@@ -115,26 +118,15 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 {
     [super viewDidLoad];
     
-    self.view.accessibilityIdentifier = @"MOONAT_rootvc";
+//    self.view.isAccessibilityElement = YES;
+    self.view.accessibilityIdentifier = @"MOONATT_rootvc";
     
     //用于空白区域关闭菜单
     self.menuCloseView.hidden = YES;
     self.menuCloseView.frame = self.view.bounds;
     [self.view addSubview:self.menuCloseView];
     
-    //配置菜单容器
-    [self.contentView configFrameWithOpenState:CGRectMake((self.view.frame.size.width / 2.0) - 150.0, (self.view.frame.size.height / 2.0) - 150.0, 300.0, 300.0) closeState:CGRectMake(0, 0, 65, 65)];
-    NSString *oldOrigin = [[NSUserDefaults standardUserDefaults]objectForKey:kMOONATContentViewOldCenter];
-    if (oldOrigin && oldOrigin.length) {
-        CGPoint oldCenter = CGPointFromString(oldOrigin);
-        oldCenter = CGPointMake(ABS(oldCenter.x), ABS(oldCenter.y));  //粗略地保证在界内
-        self.contentView.center = oldCenter;
-    } else {
-        self.contentView.center = self.view.center;
-    }
-    
-    self.contentView.absorbMode = MOONATAbsorbModeSystem;
-    self.contentView.delayFade = YES;
+    //optional:config
     [self.view addSubview:self.contentView];
     
     [self.contentView configSubViews:^NSArray<UIView *> * _Nullable(MOONATContentView * _Nonnull contentView) {
@@ -215,32 +207,27 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
                     break;
                 case MOONAssistiveTouchActionModeChangeAbsorb:
                 {
-                    if ((self.absorbIndex < 0) || (self.absorbIndex > 2)) {
-                        self.absorbIndex = 0;
+                    [self.contentView updateAbsorbMode];
+                    NSString *hint = nil;
+                    switch (self.contentView.config.absorbMode)
+                    {
+                        case MOONATAbsorbModeSystem:
+                            hint = @"System";
+                            break;
+                        case MOONATAbsorbModeEdge:
+                            hint = @"Edge";
+                            break;
+                        case MOONATAbsorbModeNone:
+                            hint = @"None";
+                            break;
                     }
-                    
-                    if (self.absorbIndex == 0) {
-                        self.contentView.absorbMode = MOONATAbsorbModeNone;
-                        [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": @"None"}];
-                    } else if (self.absorbIndex == 1) {
-                        self.contentView.absorbMode = MOONATAbsorbModeSystem;
-                        [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": @"System"}];
-                    } else if (self.absorbIndex == 2) {
-                        self.contentView.absorbMode = MOONATAbsorbModeEdge;
-                        [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": @"Edge"}];
-                    }
-                    
-                    self.absorbIndex += 1;
+                    [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": hint}];
                 }
                     break;
                 case MOONAssistiveTouchActionModeChangeDelayFade:
                 {
-                    self.contentView.delayFade = !self.contentView.delayFade;
-                    if (self.contentView.delayFade) {
-                        [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": @"已开启"}];
-                    } else {
-                        [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": @"已关闭"}];
-                    }
+                    [self.contentView updateDelayFadeMode];
+                    [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": self.contentView.config.delayFadeMode?@"已开启":@"已关闭"}];
                 }
                     break;
             }

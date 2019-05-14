@@ -8,8 +8,6 @@
 
 #import "MOONATContentView.h"
 
-NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
-
 @implementation MOONATContentConfig
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
@@ -19,7 +17,7 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
     [aCoder encodeInteger:self.absorbMode forKey:@"absorbMode"];
     [aCoder encodeBool:self.delayFadeMode forKey:@"delayFadeMode"];
     [aCoder encodeFloat:self.fadeAlpha forKey:@"fadeAlpha"];
-    [aCoder encodeInteger:self.fadeDelay forKey:@"fadeDelay"];
+    [aCoder encodeFloat:self.fadeDelayTime forKey:@"fadeDelayTime"];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -30,7 +28,7 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
         self.absorbMode = [aDecoder decodeIntegerForKey:@"absorbMode"];
         self.delayFadeMode = [aDecoder decodeBoolForKey:@"delayFadeMode"];
         self.fadeAlpha = [aDecoder decodeFloatForKey:@"fadeAlpha"];
-        self.fadeDelay = [aDecoder decodeIntegerForKey:@"fadeDelay"];
+        self.fadeDelayTime = [aDecoder decodeFloatForKey:@"fadeDelayTime"];
     }
     return self;
 }
@@ -39,26 +37,22 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
 
 #pragma mark -
 
+NSString * const kMOONATResumableConfigKey = @"kMOONATResumableConfigKey";
+
 @interface MOONATContentView ()
 
 ///记录拖动起始位置
 @property (nonatomic, assign) CGPoint oldDragPoint;
 
-///记录展示菜单前位置
-@property (nonatomic, assign) CGRect oldTapFrame;
-
 ///当前是否为展示菜单状态
-@property (nonatomic, assign) BOOL open;
+@property (nonatomic, assign, readonly) BOOL isOpen;
 
+///延时变淡
 @property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, assign) NSInteger delay;
+@property (nonatomic, assign) CGFloat delay;
 
 @property (nonatomic, strong) MOONATConfigSubViewCloseStateBlock closeBlock;
 @property (nonatomic, strong) MOONATConfigSubViewOpenStateBlock openBlock;
-
-@property (nonatomic, assign) CGRect openFrame;
-
-@property (nonatomic, strong) MOONATContentConfig *config;
 
 @end
 
@@ -69,7 +63,7 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
 - (MOONATContentConfig *)config
 {
     if (!_config) {
-        NSData *tmpData = [[NSUserDefaults standardUserDefaults]objectForKey:@"kMOONATResumableConfigKey"];
+        NSData *tmpData = [[NSUserDefaults standardUserDefaults]objectForKey:kMOONATResumableConfigKey];
         MOONATContentConfig *tmp = tmpData?[NSKeyedUnarchiver unarchiveObjectWithData:tmpData]:nil;
         if (tmp) {
             _config = tmp;
@@ -81,70 +75,69 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
             _config.absorbMode = MOONATAbsorbModeSystem;
             _config.delayFadeMode = YES;
             _config.fadeAlpha = 0.3;
-            _config.fadeDelay = 4.0;
+            _config.fadeDelayTime = 4.0;
         }
     }
     return _config;
-}
-
-- (void)dealloc
-{
-    NSData *tmpData = [NSKeyedArchiver archivedDataWithRootObject:self.config];
-    [[NSUserDefaults standardUserDefaults]setObject:tmpData forKey:@"kMOONATResumableConfigKey"];
-    [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
 #pragma mark - Interface
 
 - (void)start
 {
-    self.delay = 4.0;
-    self.open = NO;
+    self.frame = self.config.closeFrame;
+    
+    self.delay = self.config.fadeDelayTime;
     self.closeBlock(self);
     [self layoutIfNeeded];
 }
 
-- (void)startWithResumableConfig
+- (BOOL)isOpen
 {
-    
-    
-}
-
-- (void)configFrameWithOpenState:(CGRect)openFrame closeState:(CGRect)closeFrame
-{
-    self.frame = closeFrame;
-    self.openFrame = openFrame;
+    if (CGSizeEqualToSize(self.frame.size, self.config.openFrame.size)) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)updateContentViewState
 {
-    [self updateContentViewFrame:self.openFrame];
-}
-
-- (void)updateContentViewFrame:(CGRect)openingFrame
-{
     CGRect updateFrame = CGRectZero;
-    if (self.open) {
-        updateFrame = self.oldTapFrame;
+    
+    if (self.isOpen) {
+        updateFrame = self.config.closeFrame;
     } else {
-        self.oldTapFrame = self.frame;  //记录打开菜单前的位置
-        updateFrame = openingFrame;
+        self.config.closeFrame = self.frame;  //记录打开菜单前的位置
+        updateFrame = self.config.openFrame;
     }
-    self.open = !self.open;
     
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.frame = updateFrame;
-        if (self.open) {
+        if (self.isOpen) {
             self.openBlock(self);
         } else {
             self.closeBlock(self);
         }
         [self layoutIfNeeded];
     } completion:^(BOOL finished) {
-        if ((!self.open) && self.delayFade) {
+        if ((!self.isOpen) && self.config.delayFadeMode) {
             self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(contentDelayFadeHandle:) userInfo:nil repeats:YES];
         }
     }];
+}
+
+- (void)updateAbsorbMode
+{
+    if (self.config.absorbMode == MOONATAbsorbModeNone) {
+        self.config.absorbMode = 0;
+    } else {
+        self.config.absorbMode += 1;
+    }
+}
+
+- (void)updateDelayFadeMode
+{
+    self.config.delayFadeMode = !self.config.delayFadeMode;
 }
 
 - (void)configSubViews:(MOONATConfigSubViewsBlock)block
@@ -180,13 +173,13 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
     self.oldDragPoint = [touch locationInView:self];
     
     [self.timer invalidate];
-    self.delay = 4.0;
+    self.delay = self.config.fadeDelayTime;
     self.alpha = 1.0;
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    if (!self.open) {
+    if (!self.isOpen) {
         UITouch *touch = [touches anyObject];
         CGPoint newPoint = [touch locationInView:self];
         
@@ -199,22 +192,26 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    if (!self.open) {
+    if (!self.isOpen) {
         CGRect newFrame = [self frameHelperInside:self.frame barrierFrame:[UIScreen mainScreen].bounds];
         
-        if (self.absorbMode == MOONATAbsorbModeSystem) {
+        if (self.config.absorbMode == MOONATAbsorbModeSystem) {
             newFrame = [self frameHelperAbsorbSystem:newFrame barrierFrame:[UIScreen mainScreen].bounds];
         }
-        if (self.absorbMode == MOONATAbsorbModeEdge) {
+        if (self.config.absorbMode == MOONATAbsorbModeEdge) {
             newFrame = [self frameHelperAbsorbEdge:newFrame barrierFrame:[UIScreen mainScreen].bounds];
         }
         
         [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.frame = newFrame;
         } completion:^(BOOL finished) {
-            [[NSUserDefaults standardUserDefaults]setObject:NSStringFromCGPoint(self.center) forKey:kMOONATContentViewOldCenter];
+            self.config.closeFrame = self.frame;
+            
+            NSData *tmpData = [NSKeyedArchiver archivedDataWithRootObject:self.config];
+            [[NSUserDefaults standardUserDefaults]setObject:tmpData forKey:kMOONATResumableConfigKey];
             [[NSUserDefaults standardUserDefaults]synchronize];
-            if (self.delayFade) {
+
+            if (self.config.delayFadeMode) {
                 self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(contentDelayFadeHandle:) userInfo:nil repeats:YES];
             }
         }];
@@ -229,7 +226,7 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
     if (self.delay == 0) {
         [timer invalidate];  //timer有可能被多次创建
         [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.alpha = 0.3;
+            self.alpha = self.config.fadeAlpha;
         } completion:^(BOOL finished) {
             
         }];
@@ -295,8 +292,8 @@ NSString * const kMOONATContentViewOldCenter = @"kMOONATContentViewOldCenter";
 {
     CGRect newFrame = userFrame;
     
-    CGFloat midWidth = newFrame.size.width / 2.0;
-    CGFloat midHeight = newFrame.size.height / 2.0;
+    CGFloat midWidth = newFrame.size.width;
+    CGFloat midHeight = newFrame.size.height;
     
     if (newFrame.origin.x < midWidth) {
         newFrame.origin.x = 0;

@@ -11,13 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, MOONATAbsorbMode) {
-    MOONATAbsorbModeNone = 0,  //无特效
     MOONATAbsorbModeSystem,  //仿系统AssistiveTouch吸附
-    MOONATAbsorbModeEdge  //仅靠近边缘时吸附
+    MOONATAbsorbModeEdge,  //仅靠近边缘时吸附
+    MOONATAbsorbModeNone  //无特效
 };
-
-///上次关闭APP时中心点位置
-extern NSString * const kMOONATContentViewOldCenter;
 
 @class MOONATContentView;
 
@@ -39,7 +36,7 @@ extern NSString * const kMOONATContentViewOldCenter;
 @property (nonatomic, assign) CGFloat fadeAlpha;
 
 ///变淡延时
-@property (nonatomic, assign) NSInteger fadeDelay;
+@property (nonatomic, assign) CGFloat fadeDelayTime;
 
 @end
 
@@ -50,20 +47,20 @@ typedef void(^MOONATConfigSubViewOpenStateBlock)(MOONATContentView *contentView)
 ///浮窗，承载所有菜单
 @interface MOONATContentView : UIView
 
-///吸附模式
-@property (nonatomic, assign) MOONATAbsorbMode absorbMode;
-
-///延时变淡模式
-@property (nonatomic, assign) BOOL delayFade;
-
+///核心配置
+@property (nonatomic, strong) MOONATContentConfig *config;
 
 ///干！
 - (void)start;
 
-- (void)configFrameWithOpenState:(CGRect)openFrame closeState:(CGRect)closeFrame;
-
 ///自行更新菜单开启/关闭状态
 - (void)updateContentViewState;
+
+///自行更新吸附模式
+- (void)updateAbsorbMode;
+
+///自行更新延时变淡模式
+- (void)updateDelayFadeMode;
 
 ///配置所有需要添加的子视图，与subViews栈顺序一致
 - (void)configSubViews:(MOONATConfigSubViewsBlock)block;

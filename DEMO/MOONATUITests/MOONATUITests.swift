@@ -29,12 +29,13 @@ class MOONATUITests: XCTestCase {
     func testATContentView() {
         let app = XCUIApplication()
         
-        let window = app.children(matching: .window).matching(identifier: "MOONAT_window").element;
-        let rootVC = window.otherElements.matching(identifier: "MOONAT_rootvc").element;
+        let window = app.children(matching: .window).matching(identifier: "MOONATT_window").element;
         
-        let contentView = rootVC.otherElements.matching(identifier: "MOONAT_rootvc_contentview").element;
+        let rootVC = window.otherElements.matching(identifier: "MOONATT_rootvc").element;
         
-        let menuView = contentView.otherElements.matching(identifier: "MOONAT_rootvc_menuview_0").element
+        let contentView = rootVC.otherElements.matching(identifier: "MOONATT_rootvc_contentview").element;
+        
+        let menuView = contentView.otherElements.matching(identifier: "MOONATT_rootvc_menuview_0").element
         
 //        不要这么写：XCTAssert(window.exists, "视图初始化失败") 存在 NSValue 比较问题  false 不是空
         XCTAssertEqual(window.exists, true)
@@ -58,6 +59,25 @@ class MOONATUITests: XCTestCase {
         contentView.swipeDown()
         contentView.swipeLeft()
         contentView.swipeDown()
+        
+        
     }
-
+    
+    func testATWindow() {        
+        let moonattWindowWindow = XCUIApplication().windows["MOONATT_window"]
+        let coordinate: XCUICoordinate = moonattWindowWindow.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        coordinate.tap()
+        
+    }
+    
+    /// force taps a view if it reports to be not hittable - useful for buttons in cells
+    func forceTap(element: XCUIElement) {
+        if element.isHittable {
+            element.tap()
+        } else {
+            // You can also try (0, 0)
+            let coordinate: XCUICoordinate = element.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+            coordinate.tap()
+        }
+    }
 }
