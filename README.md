@@ -94,4 +94,4 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
 
 ### LICENSE
 
-[WTFPL](<http://www.wtfpl.net/about/>) – JUST DO WHAT THE F*CK YOU WANT TO DO.
+[WTFPL](<http://www.wtfpl.net/about/>) – JUST DO WHAT THE F*CK YOU WANT TO DO
