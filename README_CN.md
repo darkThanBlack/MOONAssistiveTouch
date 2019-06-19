@@ -1,6 +1,6 @@
 # MOONAssistiveTouch
 
-![](<https://img.shields.io/badge/license-WTFPL-lightgrey.svg>)  ![](<https://img.shields.io/badge/platform-iOS-lightgrey.svg>)  ![](<https://img.shields.io/badge/CocoaPods-v0.0.2-blue.svg>)  ![](<https://img.shields.io/badge/Carthage-compatible-brightgreen.svg>)
+![](<https://img.shields.io/badge/license-WTFPL-lightgrey.svg>)  ![](<https://img.shields.io/badge/platform-iOS-lightgrey.svg>)  ![](<https://img.shields.io/badge/CocoaPods-v0.0.3-blue.svg>)  ![](<https://img.shields.io/badge/Carthage-compatible-brightgreen.svg>)
 
 ### 这是什么？
 
@@ -20,7 +20,7 @@
   
   platform :ios, '8.0'
   
-  pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git', :tag => '0.0.2'
+  pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git', :tag => '0.0.3'
   ```
 
 - Carthage:
@@ -91,6 +91,12 @@
 - [What is CocoaPods?](<https://github.com/CocoaPods/CocoaPods>)
 - [What is Carthage?](<https://github.com/Carthage/Carthage>)
 - [What is Doxygen?](<http://www.doxygen.nl/>)
+
+### 更新日志
+
+- **0.0.3**  .bundle 资源包内包含 .plist 导致无法传包问题
+- **0.0.2**  基本稳定
+- **0.0.1**  初始创建
 
 ### LICENSE
 
