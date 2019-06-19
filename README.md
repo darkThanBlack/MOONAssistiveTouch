@@ -1,6 +1,6 @@
 # MOONAssistiveTouch
 
-![](<https://img.shields.io/badge/license-WTFPL-lightgrey.svg>)  ![](<https://img.shields.io/badge/platform-iOS-lightgrey.svg>)  ![](<https://img.shields.io/badge/CocoaPods-v0.0.1-blue.svg>)  ![](<https://img.shields.io/badge/Carthage-compatible-brightgreen.svg>)
+![](<https://img.shields.io/badge/license-WTFPL-lightgrey.svg>)  ![](<https://img.shields.io/badge/platform-iOS-lightgrey.svg>)  ![](<https://img.shields.io/badge/CocoaPods-v0.0.2-blue.svg>)  ![](<https://img.shields.io/badge/Carthage-compatible-brightgreen.svg>)
 
 ### WO ZI JI YE KAN BU DONG
 
@@ -23,7 +23,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
   
   platform :ios, '8.0'
   
-  pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git'
+  pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git', :tag => '0.0.2'
   ```
 
 * Carthage:
