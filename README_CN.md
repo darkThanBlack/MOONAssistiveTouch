@@ -20,7 +20,7 @@
   
   platform :ios, '8.0'
   
-  pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git', :tag => '0.0.3'
+  pod 'MOONAssistiveTouch', :git => 'https://github.com/darkThanBlack/MOONAssistiveTouch.git', :tag => '0.0.3', :configurations => ['Debug']
   ```
 
 - Carthage:
