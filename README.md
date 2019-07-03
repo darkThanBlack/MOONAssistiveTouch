@@ -94,6 +94,7 @@ A bundle of debug UI that looks like iOS system AssistiveTouch.
 
 ### UPDATE
 
+* **0.0.4**  add ``AboveToast``
 * **0.0.3**  kill ``.plist`` in ``.bundle``
 * **0.0.2**  Basic
 * **0.0.1**  Create
