@@ -341,6 +341,7 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
             
             //动画
             [self configCloseStateWithFrame:self.frame animated:YES completion:^(BOOL finished) {
+                self.imageView.hidden = YES;
                 subMenu.hidden = NO;
                 [subMenu configOpenStateWithFrame:self.bounds animated:YES completion:nil];
             }];
@@ -460,6 +461,8 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
 ///当外部事件导致主菜单需要被直接关闭时,可以调用这个方法直接移除所有子菜单
 - (void)closeSubMenus
 {
+    self.imageView.hidden = NO;
+
     for (UIView *subView in self.subviews) {
         if ([subView isKindOfClass:[MOONATSystemMenuView class]]) {
             MOONATSystemMenuView *subMenu = (MOONATSystemMenuView *)subView;
@@ -474,7 +477,6 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
  如果当前菜单是子菜单，显示时会暂时隐藏返回按钮
  
  @param text 提示文字
- @bug 连续点击未隐藏返回按钮
  
  */
 - (void)showToast:(NSString *)text
@@ -482,19 +484,21 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
     self.toastLabel.text = text;
     [self.toastLabel sizeToFit];
     
-    self.backButton.hidden = YES;
-    
-    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.toastLabel.alpha = 1.0;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.3 delay:3.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            self.toastLabel.alpha = 0.0;
+    if (self.backButton.hidden == NO) {
+        self.backButton.hidden = YES;
+        
+        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self.toastLabel.alpha = 1.0;
         } completion:^(BOOL finished) {
-            if (self.isSubMenu) {
-                self.backButton.hidden = NO;
-            }
+            [UIView animateWithDuration:0.3 delay:3.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                self.toastLabel.alpha = 0.0;
+            } completion:^(BOOL finished) {
+                if (self.isSubMenu) {
+                    self.backButton.hidden = NO;
+                }
+            }];
         }];
-    }];
+    }
 }
 
 #pragma mark Life Cycle
