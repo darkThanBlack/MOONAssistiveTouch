@@ -16,6 +16,7 @@ static MOONATCore *core_ = nil;
 @interface MOONATCore ()
 
 @property (nonatomic, strong) MOONATWindow *window;
+@property (nonatomic, strong, readwrite) UINavigationController *navigationController;
 @property (nonatomic, strong) MOONATRootViewController *rootVC;
 
 @end
@@ -36,6 +37,14 @@ static MOONATCore *core_ = nil;
 
 #pragma mark Getter
 
+- (UINavigationController *)navigationController
+{
+    if (!_navigationController) {
+        _navigationController = [[UINavigationController alloc]initWithRootViewController:self.rootVC];
+    }
+    return _navigationController;
+}
+
 - (MOONATRootViewController *)rootVC
 {
     if (!_rootVC) {
@@ -53,9 +62,7 @@ static MOONATCore *core_ = nil;
         _window.isAccessibilityElement = YES;
         _window.accessibilityIdentifier = @"MOONATT_window";
         
-        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.rootVC];
-        _window.rootViewController = nav;
-        
+        _window.rootViewController = self.navigationController;
         _window.noResponseView = self.rootVC.view;
     }
     return _window;
@@ -89,7 +96,6 @@ static MOONATCore *core_ = nil;
 
 - (void)start
 {
-    
     self.window.hidden = NO;
 }
 
@@ -110,7 +116,7 @@ static MOONATCore *core_ = nil;
         
     }];
     
-    MOONATMenuItemAction *action_sub_0 = [MOONATMenuItemAction actionWithTitle:@"0" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
+    MOONATMenuItemAction *action_sub_0 = [MOONATMenuItemAction actionWithTitle:@"三级菜单" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
         
     }];
     
@@ -151,41 +157,15 @@ static MOONATCore *core_ = nil;
     
     action_appearaence.subActions = @[action_delay, action_absorb];
     
-    MOONATMenuItemAction *action_service = [MOONATMenuItemAction actionWithTitle:@"切换地址" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    
-    MOONATMenuItemAction *action_service_0 = [MOONATMenuItemAction actionWithTitle:@"dev" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    
-    MOONATMenuItemAction *action_service_1 = [MOONATMenuItemAction actionWithTitle:@"qa" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    MOONATMenuItemAction *action_service_2 = [MOONATMenuItemAction actionWithTitle:@"qb" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    MOONATMenuItemAction *action_service_3 = [MOONATMenuItemAction actionWithTitle:@"qc" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    MOONATMenuItemAction *action_service_4 = [MOONATMenuItemAction actionWithTitle:@"qd" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    MOONATMenuItemAction *action_service_5 = [MOONATMenuItemAction actionWithTitle:@"qe" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
-    }];
-    
-    action_service.subActions = @[action_service_0, action_service_1, action_service_2, action_service_3, action_service_4, action_service_5];
-    
     MOONATMenuItemAction *action_scan = [MOONATMenuItemAction actionWithTitle:@"扫描" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
         
     }];
     
-    MOONATMenuItemAction *action_old = [MOONATMenuItemAction actionWithTitle:@"旧版" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
-        
+    MOONATMenuItemAction *action_toast = [MOONATMenuItemAction actionWithTitle:@"上方提示" itemBlock:^(MOONATMenuItemAction * _Nonnull action) {
+        [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeShowToast params:@{@"text": @"容器上方提示\n测试地址：https://github.com/darkThanBlack/MOONAssistiveTouch"}];
     }];
     
-    return @[action_skin, action_appearaence, action_sub, action_service, action_scan, action_old];
+    return @[action_skin, action_appearaence, action_sub, action_scan, action_toast];
 }
 
 @end

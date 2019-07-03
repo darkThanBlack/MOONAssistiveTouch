@@ -24,6 +24,7 @@ var NAVTREE =
 [
   [ "MOONAssistiveTouch", "index.html", [
     [ "MOONAssistiveTouch", "autotoc_md0.html", null ],
+    [ "MOONAssistiveTouch", "autotoc_md10.html", null ],
     [ "Bug 列表", "bug.html", null ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
@@ -50,7 +51,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_m_o_o_n_a_t_content_view_8h.html"
+"_a_t_sub_view_controller_8h.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

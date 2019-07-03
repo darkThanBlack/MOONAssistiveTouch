@@ -340,10 +340,10 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
             [self addSubview:subMenu];
             
             //动画
-            [self configCloseStateWithFrame:self.frame animated:YES completion:^(BOOL finished) {
+            [self updateToCloseStateWithFrame:self.frame animated:YES completion:^(BOOL finished) {
                 self.imageView.hidden = YES;
                 subMenu.hidden = NO;
-                [subMenu configOpenStateWithFrame:self.bounds animated:YES completion:nil];
+                [subMenu updateToOpenStateWithFrame:self.bounds animated:YES completion:nil];
             }];
         }];
         
@@ -396,7 +396,7 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
  @param animated 是否执行动画效果
  @param completion 动画完成后回调
  */
-- (void)configOpenStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion
+- (void)updateToOpenStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion
 {
     self.frame = frame;
     
@@ -430,7 +430,7 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
  @param animated 是否执行动画效果
  @param completion 动画完成后回调
  */
-- (void)configCloseStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion
+- (void)updateToCloseStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion
 {
     self.frame = frame;
     
@@ -545,10 +545,10 @@ typedef void(^MOONATSystemItemActionBlock)(MOONATSystemItem *item);
 
 - (void)backButtonEvent:(UIButton *)button
 {
-    [self configCloseStateWithFrame:self.frame animated:YES completion:^(BOOL finished) {
+    [self updateToCloseStateWithFrame:self.frame animated:YES completion:^(BOOL finished) {
         if ([self.superview isKindOfClass:[MOONATSystemMenuView class]]) {
             MOONATSystemMenuView *superMenu = (MOONATSystemMenuView *)self.superview;
-            [superMenu configOpenStateWithFrame:superMenu.frame animated:YES completion:nil];
+            [superMenu updateToOpenStateWithFrame:superMenu.frame animated:YES completion:nil];
         }
         [self removeFromSuperview];
     }];

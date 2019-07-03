@@ -89,12 +89,38 @@ $(document).ready(function(){initNavTree('autotoc_md0.html','');});
 <div class="title">MOONAssistiveTouch </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li>DEMO:<a href="./MOONAssistiveTouch.xcodeproj">DEMO</a></li>
-<li>doxygen:<a href="./Doc/html/index.html">doxygen</a></li>
-<li>cocoapods:</li>
+<div class="textblock"><p><object type="image/svg+xml" data="https://img.shields.io/badge/license-WTFPL-lightgrey.svg" style="pointer-events: none;"></object> <object type="image/svg+xml" data="https://img.shields.io/badge/platform-iOS-lightgrey.svg" style="pointer-events: none;"></object> <object type="image/svg+xml" data="https://img.shields.io/badge/CocoaPods-v0.0.3-blue.svg" style="pointer-events: none;"></object> <object type="image/svg+xml" data="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg" style="pointer-events: none;"></object></p>
+<p><a class="el" href="_r_e_a_d_m_e___c_n_8md.html">简体中文版介绍</a></p>
+<p>A bundle of debug UI that looks like iOS system AssistiveTouch.</p>
+<p><img src="./DEMO/DEMO.gif" alt="" class="inline"/></p>
+<ul>
+<li>CocoaPods:</li>
 </ul>
-<div class="fragment"><div class="line">source <span class="stringliteral">&#39;https://github.com/darkThanBlack/MOONAssistiveTouch.git&#39;</span></div><div class="line"> </div><div class="line">platform :ios, <span class="stringliteral">&#39;9.0&#39;</span></div><div class="line"> </div><div class="line">pod <span class="stringliteral">&#39;MOONAssistiveTouch&#39;</span>, :git =&gt; <span class="stringliteral">&#39;https://github.com/darkThanBlack/MOONAssistiveTouch.git&#39;</span></div></div><!-- fragment --> </div></div><!-- PageDoc -->
+<div class="fragment"><div class="line">source <span class="stringliteral">&#39;https://github.com/darkThanBlack/MOONAssistiveTouch.git&#39;</span></div><div class="line"> </div><div class="line">platform :ios, <span class="stringliteral">&#39;8.0&#39;</span></div><div class="line"> </div><div class="line">pod <span class="stringliteral">&#39;MOONAssistiveTouch&#39;</span>, :git =&gt; <span class="stringliteral">&#39;https://github.com/darkThanBlack/MOONAssistiveTouch.git&#39;</span>, :tag =&gt; <span class="stringliteral">&#39;0.0.3&#39;</span>, :configurations =&gt; [<span class="stringliteral">&#39;Debug&#39;</span>]</div></div><!-- fragment --><ul>
+<li>Carthage:</li>
+</ul>
+<div class="fragment"><div class="line">github <span class="stringliteral">&quot;darkThanBlack/MOONAssistiveTouch&quot;</span></div></div><!-- fragment --><ul>
+<li>JUST SEE SEE:</li>
+</ul>
+<div class="fragment"><div class="line">#import &quot;MOONAssistiveTouch/MOONATCore.h&quot;</div><div class="line"> </div><div class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {</div><div class="line">    [[MOONATCore core]configMenuItemActions:[MOONATCore demoActions]];</div><div class="line">    [[MOONATCore core] start];</div><div class="line">}</div></div><!-- fragment --><ul>
+<li>Sample codes:</li>
+</ul>
+<div class="fragment"><div class="line">//adapt cocoapods and carthage</div><div class="line">#import &quot;MOONAssistiveTouch/MOONATCore.h&quot;</div><div class="line"> </div><div class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {</div><div class="line">    [[MOONATCore core]configMenuItemActions:[self demoActions]];</div><div class="line">    [[MOONATCore core] start];</div><div class="line">}</div><div class="line"> </div><div class="line">- (NSArray&lt;MOONATMenuItemAction *&gt; *)demoActions</div><div class="line">{</div><div class="line">    MOONATMenuItemAction *action_skin = [MOONATMenuItemAction actionWithTitle:@&quot;换肤&quot; itemBlock:^(MOONATMenuItemAction * _Nonnull action) {</div><div class="line">        [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeChangeSkin params:nil];</div><div class="line">        //do what you want to do</div><div class="line">    }];</div><div class="line"> </div><div class="line">    MOONATMenuItemAction *action_delay = [MOONATMenuItemAction actionWithTitle:@&quot;延时变淡&quot; itemBlock:^(MOONATMenuItemAction * _Nonnull action) {</div><div class="line">        [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeChangeDelayFade params:nil];</div><div class="line">    }];</div><div class="line">    </div><div class="line">    MOONATMenuItemAction *action_absorb = [MOONATMenuItemAction actionWithTitle:@&quot;吸附模式&quot; itemBlock:^(MOONATMenuItemAction * _Nonnull action) {</div><div class="line">        [action triggerAssistiveTouchAction:MOONAssistiveTouchActionModeChangeAbsorb params:nil];</div><div class="line">    }];</div><div class="line">    </div><div class="line">    MOONATMenuItemAction *action_appearaence = [MOONATMenuItemAction actionWithTitle:@&quot;特效设置&quot; itemBlock:^(MOONATMenuItemAction * _Nonnull action) {</div><div class="line">        </div><div class="line">    }];</div><div class="line">    </div><div class="line">    action_appearaence.subActions = @[action_delay, action_absorb];</div><div class="line">  </div><div class="line">    return @[action_skin, action_appearaence, action_sub];</div><div class="line">}</div></div><!-- fragment --><ul>
+<li><a href="./MOONAssistiveTouch.xcodeproj">DEMO</a></li>
+<li><a href="./Doc/html/index.html">Doxygen</a> include <b>BUG LIST</b></li>
+</ul>
+<ul>
+<li><a href="https://github.com/CocoaPods/CocoaPods">What is CocoaPods?</a></li>
+<li><a href="https://github.com/Carthage/Carthage">What is Carthage?</a></li>
+<li><a href="http://www.doxygen.nl/">What is Doxygen?</a></li>
+</ul>
+<ul>
+<li><b>0.0.3</b> kill <code>.plist</code> in <code>.bundle</code></li>
+<li><b>0.0.2</b> Basic</li>
+<li><b>0.0.1</b> Create</li>
+</ul>
+<p><a href="http://www.wtfpl.net/about/">WTFPL</a> – JUST DO WHAT THE F*CK YOU WANT TO DO </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

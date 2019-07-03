@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['toastlabel',['toastLabel',['../interface_m_o_o_n_a_t_system_menu_view.html#affd67c04d9fc904424ba214cff4214c8',1,'MOONATSystemMenuView']]],
-  ['touchesbegan_3awithevent_3a',['touchesBegan:withEvent:',['../interface_m_o_o_n_a_t_content_view.html#a1d7f410bce7234a72e153ab2ae68a574',1,'MOONATContentView']]],
-  ['touchesended_3awithevent_3a',['touchesEnded:withEvent:',['../interface_m_o_o_n_a_t_content_view.html#a0c7128d0babbaf0257d47f69f2fb69ed',1,'MOONATContentView']]],
-  ['touchesmoved_3awithevent_3a',['touchesMoved:withEvent:',['../interface_m_o_o_n_a_t_content_view.html#aa3d9ef0b03de962c1a9f187a5f782a4d',1,'MOONATContentView']]],
-  ['triggerassistivetouchaction_3aparams_3a',['triggerAssistiveTouchAction:params:',['../interface_m_o_o_n_a_t_menu_item_action.html#af9f2263ceaac5353dfceac724076bfac',1,'MOONATMenuItemAction']]],
-  ['triggerassistivetouchmenuaction_3aparams_3a',['triggerAssistiveTouchMenuAction:params:',['../interface_m_o_o_n_a_t_menu_item_action.html#ade7d1d235f3b223896cca217f516babe',1,'MOONATMenuItemAction']]]
+  ['setactions_3a',['setActions:',['../interface_m_o_o_n_a_t_root_view_controller.html#aba9b8e20771a7193631e849340880f1f',1,'MOONATRootViewController::setActions:()'],['../interface_m_o_o_n_a_t_system_menu_view.html#a4f656fef7e075c7f94aa451d8fa6d45f',1,'MOONATSystemMenuView::setActions:()']]],
+  ['setmenuskin_3a',['setMenuSkin:',['../interface_m_o_o_n_a_t_system_menu_view.html#ae97e740f0299a945243413524ebe2073',1,'MOONATSystemMenuView']]],
+  ['showtoast_3a',['showToast:',['../interface_m_o_o_n_a_t_system_menu_view.html#a98c3c12022588b7d1ac48a10a50ecb10',1,'MOONATSystemMenuView']]],
+  ['skin',['skin',['../interface_m_o_o_n_a_t_root_view_controller.html#adb88a5910ca752d5e5dae8d05f4193af',1,'MOONATRootViewController']]],
+  ['skinarray',['skinArray',['../interface_m_o_o_n_a_t_root_view_controller.html#abab183d66a6118827fa825159f791e4a',1,'MOONATRootViewController']]],
+  ['start',['start',['../interface_m_o_o_n_a_t_content_view.html#a8b130e25660e34984a9730153307cce5',1,'MOONATContentView::start()'],['../interface_m_o_o_n_a_t_core.html#a4a57c948fe8fb2c90a45abb48b0f8570',1,'MOONATCore::start()']]],
+  ['stop',['stop',['../interface_m_o_o_n_a_t_core.html#aa6128a469cedaffc9316e547c593d7c1',1,'MOONATCore']]]
 ];

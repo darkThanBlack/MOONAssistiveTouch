@@ -83,6 +83,19 @@ NSString * const kMOONATResumableConfigKey = @"kMOONATResumableConfigKey";
 
 #pragma mark - Interface
 
+- (BOOL)hasResumableConfig
+{
+    NSData *tmpData = [[NSUserDefaults standardUserDefaults]objectForKey:kMOONATResumableConfigKey];
+    MOONATContentConfig *tmp = tmpData?[NSKeyedUnarchiver unarchiveObjectWithData:tmpData]:nil;
+    return tmp?YES:NO;
+}
+
+- (void)clearLocalConfig
+{
+    [[NSUserDefaults standardUserDefaults]removeObjectForKey:kMOONATResumableConfigKey];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
+
 - (void)start
 {
     self.frame = self.config.closeFrame;

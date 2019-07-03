@@ -49,6 +49,10 @@ typedef void(^MOONATConfigSubViewOpenStateBlock)(MOONATContentView *contentView)
 
 ///核心配置
 @property (nonatomic, strong) MOONATContentConfig *config;
+///存在本地配置
+- (BOOL)hasResumableConfig;
+///清除本地配置
+- (void)clearLocalConfig;
 
 ///干！
 - (void)start;

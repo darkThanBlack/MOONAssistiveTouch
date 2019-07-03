@@ -12,6 +12,8 @@
 		A22910AE22851CB6009725C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22910AD22851CB6009725C3 /* main.m */; };
 		A22910B622851F56009725C3 /* MOONATDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A22910B522851F56009725C3 /* MOONATDemoViewController.m */; };
 		A29A8E7F228917F700076317 /* MOONATUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A8E7E228917F700076317 /* MOONATUITests.swift */; };
+		A2FA1DF422CC9DB30025941B /* DemoSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FA1DF322CC9DB30025941B /* DemoSubViewController.m */; };
+		A2FA1DF722CC9DBE0025941B /* ATSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FA1DF622CC9DBE0025941B /* ATSubViewController.m */; };
 		A2FA9018228526440078AB80 /* MOONAssistiveTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */; };
 		A2FA9019228526440078AB80 /* MOONAssistiveTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A22910BC22852558009725C3 /* MOONAssistiveTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -53,6 +55,10 @@
 		A29A8E7C228917F700076317 /* MOONATUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOONATUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29A8E7E228917F700076317 /* MOONATUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOONATUITests.swift; sourceTree = "<group>"; };
 		A29A8E80228917F700076317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FA1DF222CC9DB30025941B /* DemoSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSubViewController.h; sourceTree = "<group>"; };
+		A2FA1DF322CC9DB30025941B /* DemoSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSubViewController.m; sourceTree = "<group>"; };
+		A2FA1DF522CC9DBE0025941B /* ATSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSubViewController.h; sourceTree = "<group>"; };
+		A2FA1DF622CC9DBE0025941B /* ATSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSubViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 			children = (
 				A229109E22851CB6009725C3 /* AppDelegate.h */,
 				A229109F22851CB6009725C3 /* AppDelegate.m */,
+				A2FA1DF222CC9DB30025941B /* DemoSubViewController.h */,
+				A2FA1DF322CC9DB30025941B /* DemoSubViewController.m */,
+				A2FA1DF522CC9DBE0025941B /* ATSubViewController.h */,
+				A2FA1DF622CC9DBE0025941B /* ATSubViewController.m */,
 				A22910B422851F56009725C3 /* MOONATDemoViewController.h */,
 				A22910B522851F56009725C3 /* MOONATDemoViewController.m */,
 				A22910A722851CB6009725C3 /* Assets.xcassets */,
@@ -225,7 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FA1DF422CC9DB30025941B /* DemoSubViewController.m in Sources */,
 				A22910AE22851CB6009725C3 /* main.m in Sources */,
+				A2FA1DF722CC9DBE0025941B /* ATSubViewController.m in Sources */,
 				A22910A022851CB6009725C3 /* AppDelegate.m in Sources */,
 				A22910B622851F56009725C3 /* MOONATDemoViewController.m in Sources */,
 			);

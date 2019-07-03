@@ -16,12 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
 ///单例，持有 浮窗 window 保证不被释放
 @interface MOONATCore : NSObject
 
+@property (nonatomic, strong, readonly) UINavigationController *navigationController;
+
 + (MOONATCore *)core;
 
 //默认菜单，Demo展示用
 + (NSArray<MOONATMenuItemAction *> *)demoActions;
 
-//配置菜单按钮与对应事件,传demoActions查看示例
+//配置菜单按钮与对应事件,传 demoActions 或 nil 均可查看示例
 - (void)configMenuItemActions:(NSArray<MOONATMenuItemAction *> *)actions;
 
 //显示浮窗

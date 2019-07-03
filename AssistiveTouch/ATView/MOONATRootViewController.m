@@ -22,6 +22,9 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 ///用于填充空白背景区域，触发关闭菜单事件
 @property (nonatomic, strong) UIView *menuCloseView;
 
+///容器上方提示
+@property (nonatomic, strong) UILabel *aboveHintLabel;
+
 ///菜单容器
 @property (nonatomic, strong) MOONATContentView *contentView;
 
@@ -74,6 +77,25 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     return _menuCloseView;
 }
 
+- (UILabel *)aboveHintLabel
+{
+    if (!_aboveHintLabel) {
+        _aboveHintLabel = [[UILabel alloc]init];
+        
+        _aboveHintLabel.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+        _aboveHintLabel.text = @"上方提示";
+        _aboveHintLabel.textColor = [UIColor whiteColor];
+        _aboveHintLabel.font = [UIFont systemFontOfSize:12];
+        _aboveHintLabel.numberOfLines = 0;
+        
+        _aboveHintLabel.layer.masksToBounds = YES;
+        _aboveHintLabel.layer.cornerRadius = 3.0;
+        
+        _aboveHintLabel.userInteractionEnabled = YES;  //阻拦事件
+    }
+    return _aboveHintLabel;
+}
+
 - (MOONATContentView *)contentView
 {
     if (!_contentView) {
@@ -109,11 +131,6 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 
 #pragma mark Life Cycle
 
-- (void)dealloc
-{
-    
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -126,7 +143,23 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
     self.menuCloseView.frame = self.view.bounds;
     [self.view addSubview:self.menuCloseView];
     
-    //optional:config
+    //用于容器上方提示
+    [self.view addSubview:self.aboveHintLabel];
+
+    //optional: 重写默认配置
+    if (![self.contentView hasResumableConfig]) {
+        MOONATContentConfig *config = [[MOONATContentConfig alloc]init];
+        
+        config.closeFrame = CGRectMake(([UIScreen mainScreen].bounds.size.width / 2.0) - 32.5, ([UIScreen mainScreen].bounds.size.height / 2.0) - 32.5, 65.0, 65.0);
+        config.openFrame = CGRectMake(([UIScreen mainScreen].bounds.size.width / 2.0) - 150.0, ([UIScreen mainScreen].bounds.size.height / 2.0) - 150.0, 300.0, 300.0);
+        config.absorbMode = MOONATAbsorbModeSystem;
+        config.delayFadeMode = YES;
+        config.fadeAlpha = 0.3;
+        config.fadeDelayTime = 4.0;
+        
+        self.contentView.config = config;
+    }
+    
     [self.view addSubview:self.contentView];
     
     [self.contentView configSubViews:^NSArray<UIView *> * _Nullable(MOONATContentView * _Nonnull contentView) {
@@ -137,13 +170,15 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
         self.menuCloseView.hidden = YES;
         
         [self.menuView_0 closeSubMenus];  //先关闭子菜单，防止动画出错
-        [self.menuView_0 configCloseStateWithFrame:contentView.bounds animated:NO completion:nil];
+        [self.menuView_0 updateToCloseStateWithFrame:contentView.bounds animated:NO completion:nil];
+        
+        [self updateAboveToast:@"" show:NO animated:NO];
     }];
     
     [self.contentView configSubViewOpenState:^(MOONATContentView * _Nonnull contentView) {
         self.menuCloseView.hidden = NO;
         
-        [self.menuView_0 configOpenStateWithFrame:contentView.bounds animated:NO completion:nil];
+        [self.menuView_0 updateToOpenStateWithFrame:contentView.bounds animated:NO completion:nil];
     }];
     
     [self.contentView start];
@@ -202,7 +237,7 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
                     
                     self.actions = self.actions;
                     //重设为打开状态
-                    [self.menuView_0 configOpenStateWithFrame:self.menuView_0.frame animated:NO completion:nil];
+                    [self.menuView_0 updateToOpenStateWithFrame:self.menuView_0.frame animated:NO completion:nil];
                 }
                     break;
                 case MOONAssistiveTouchActionModeChangeAbsorb:
@@ -230,6 +265,11 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
                     [action triggerAssistiveTouchMenuAction:MOONAssistiveTouchMenuActionModeShowToast params:@{@"text": self.contentView.config.delayFadeMode?@"已开启":@"已关闭"}];
                 }
                     break;
+                case MOONAssistiveTouchActionModeShowToast:
+                {
+                    [self updateAboveToast:[params objectForKey:@"text"] show:YES animated:YES];
+                }
+                    break;
             }
         }];
     }
@@ -240,6 +280,30 @@ NSString * const kMOONATSystemMenuSkinKey = @"kMOONATSystemMenuSkinKey";
 - (void)assistiveTouchedEvent:(UITapGestureRecognizer *)gesture
 {
     [self.contentView updateContentViewState];
+}
+
+- (void)updateAboveToast:(NSString *)text show:(BOOL)show animated:(BOOL)animated
+{
+    self.aboveHintLabel.text = text;
+    [self.aboveHintLabel sizeToFit];
+    
+    CGRect referFrame = self.contentView.config.openFrame;
+    self.aboveHintLabel.frame = CGRectMake(referFrame.origin.x, referFrame.origin.y, referFrame.size.width, self.aboveHintLabel.frame.size.height);
+    
+    if (show) {
+        self.aboveHintLabel.hidden = NO;
+        [UIView animateWithDuration:animated?0.3:0.0 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.aboveHintLabel.frame = CGRectMake(referFrame.origin.x, referFrame.origin.y - self.aboveHintLabel.frame.size.height - 8.0, referFrame.size.width, self.aboveHintLabel.frame.size.height);
+        } completion:^(BOOL finished) {
+            
+        }];
+    } else {
+        [UIView animateWithDuration:animated?0.3:0.0 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.aboveHintLabel.frame = CGRectMake(referFrame.origin.x, referFrame.origin.y, referFrame.size.width, self.aboveHintLabel.frame.size.height);
+        } completion:^(BOOL finished) {
+            self.aboveHintLabel.hidden = YES;
+        }];
+    }
 }
 
 #pragma mark - Skin

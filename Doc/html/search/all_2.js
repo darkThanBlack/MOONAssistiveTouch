@@ -1,13 +1,14 @@
 var searchData=
 [
   ['changeskin',['changeSkin',['../interface_m_o_o_n_a_t_root_view_controller.html#a9b664139f91cb6a93a09e0b3a4f4798d',1,'MOONATRootViewController']]],
+  ['clearlocalconfig',['clearLocalConfig',['../interface_m_o_o_n_a_t_content_view.html#a4a6a5c36d6255025873afcc564964646',1,'MOONATContentView']]],
   ['closeblock',['closeBlock',['../interface_m_o_o_n_a_t_content_view.html#aef851464344fa98fdfc1f39351cfe914',1,'MOONATContentView']]],
+  ['closeframe',['closeFrame',['../interface_m_o_o_n_a_t_content_config.html#a7e54898f21ad81a05964fce26adc18cd',1,'MOONATContentConfig']]],
   ['closesubmenus',['closeSubMenus',['../interface_m_o_o_n_a_t_system_menu_view.html#a657cce9109db21176d2c7167d1950467',1,'MOONATSystemMenuView']]],
-  ['configclosestatewithframe_3aanimated_3acompletion_3a',['configCloseStateWithFrame:animated:completion:',['../interface_m_o_o_n_a_t_system_menu_view.html#a67d0a8321778893eaca109a4a91fc88b',1,'MOONATSystemMenuView']]],
+  ['config',['config',['../interface_m_o_o_n_a_t_content_view.html#a5b4fada294d00d76c555d0e4fc9d53b3',1,'MOONATContentView']]],
+  ['configactions',['configActions',['../interface_m_o_o_n_a_t_demo_view_controller.html#a74d82e12a1b7154335cdc21ff32e33fd',1,'MOONATDemoViewController']]],
   ['configdatawithactions_3a',['configDataWithActions:',['../interface_m_o_o_n_a_t_root_view_controller.html#a6996b56d4267b4fda41f7168f743bc80',1,'MOONATRootViewController']]],
-  ['configframewithopenstate_3aclosestate_3a',['configFrameWithOpenState:closeState:',['../interface_m_o_o_n_a_t_content_view.html#a37b530a3c8b55e4f89dfcc12f9f5817c',1,'MOONATContentView']]],
   ['configmenuitemactions_3a',['configMenuItemActions:',['../interface_m_o_o_n_a_t_core.html#aac91fe243f553e7487d3bcfd31e72afb',1,'MOONATCore']]],
-  ['configopenstatewithframe_3aanimated_3acompletion_3a',['configOpenStateWithFrame:animated:completion:',['../interface_m_o_o_n_a_t_system_menu_view.html#ade228830032727cda2af32df654be767',1,'MOONATSystemMenuView']]],
   ['configskinarray_3afromoriginalarray_3aindex_3askin_3a',['configSkinArray:fromOriginalArray:index:skin:',['../interface_m_o_o_n_a_t_root_view_controller.html#a8b31ab0c583a5506b535c9b996466108',1,'MOONATRootViewController']]],
   ['configsubviewclosestate_3a',['configSubViewCloseState:',['../interface_m_o_o_n_a_t_content_view.html#a6b6313e653275e96cdbd7c6f0e6dd23a',1,'MOONATContentView']]],
   ['configsubviewopenstate_3a',['configSubViewOpenState:',['../interface_m_o_o_n_a_t_content_view.html#a46f05b9b6d00d33268b879308e132519',1,'MOONATContentView']]],

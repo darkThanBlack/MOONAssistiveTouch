@@ -25,7 +25,10 @@ typedef NS_ENUM(NSUInteger, MOONAssistiveTouchActionMode) {
     MOONAssistiveTouchActionModeChangeAbsorb,
     
     /** 延时变淡模式 */
-    MOONAssistiveTouchActionModeChangeDelayFade
+    MOONAssistiveTouchActionModeChangeDelayFade,
+    
+    /** 展示提示文字 */
+    MOONAssistiveTouchActionModeShowToast
 };
 
 /** 内容菜单行为模式 */

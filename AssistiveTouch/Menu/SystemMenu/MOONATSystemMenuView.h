@@ -20,10 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)configWithSkin:(NSDictionary * __nullable)menuSkin actions:(NSArray<MOONATMenuItemAction *> *)actions;
 
 //配置菜单的打开状态与动画
-- (void)configOpenStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion;
+- (void)updateToOpenStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion;
 
 //配置菜单的关闭状态与动画
-- (void)configCloseStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion;
+- (void)updateToCloseStateWithFrame:(CGRect)frame animated:(BOOL)animated completion:(void (^ __nullable)(BOOL finished))completion;
 
 //直接移除所有子菜单
 - (void)closeSubMenus;
